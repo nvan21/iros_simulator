@@ -1,6 +1,7 @@
 import torch
 import numpy as np
 from plant import DoublePendulumPlant
+from simulation import Simulator
 from double_pendulum.model.model_parameters import model_parameters
 
 device = torch.device("cuda")
@@ -31,14 +32,17 @@ mpar.set_cfric([0.0, 0.0])
 mpar.set_torque_limit(torque_limit)
 
 plant = DoublePendulumPlant(model_params=mpar, num_envs=3, device=device)
+sim = Simulator(plant=plant, num_envs=3)
 
 state = torch.ones((3, 4), dtype=torch.float32, device=device)
 torques = torch.ones((3, 1), dtype=torch.float32, device=device)
-print(plant.forward_dynamics(state, torques))
+print(sim.runge_integrator(state, torques, 0.002, 0.0))
 
 from double_pendulum.model.plant import DoublePendulumPlant
+from double_pendulum.simulation.simulation import Simulator
 
 plant = DoublePendulumPlant(model_pars=mpar)
+sim = Simulator(plant)
 state = np.array([1, 1, 1, 1])
 tau = np.array([0, 1])
-print(plant.rhs(t=0, state=state, tau=tau))
+print(sim.runge_integrator(state, 0.002, 0.0, tau))

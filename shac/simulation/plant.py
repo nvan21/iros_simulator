@@ -65,6 +65,21 @@ class DoublePendulumPlant:
 
         return accn
 
+    def rhs(self, t: float, x: torch.Tensor, u: torch.Tensor) -> torch.Tensor:
+        # Forward dynamics
+        accn = self.forward_dynamics(x, u)
+
+        # Next state
+        v1 = x[:, 2]
+        v2 = x[:, 3]
+        a1 = accn[:, 0]
+        a2 = accn[:, 1]
+
+        # Transpose the new matrix so that the shape stays the same
+        new_x = torch.stack((v1, v2, a1, a2)).T
+
+        return new_x
+
     def mass_tensor(self, x: torch.Tensor) -> torch.Tensor:
         pos = x[:, : self.dof]
 
