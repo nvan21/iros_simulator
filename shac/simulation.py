@@ -1,6 +1,6 @@
 import torch
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Tuple
 import time
 
 # Imports just for type checking
@@ -48,9 +48,9 @@ class Simulator:
     ):
         self.process_noise_sigmas = process_noise_sigmas.to(self.device)
 
-    def set_state(self, x: torch.Tensor, t: float) -> None:
-        self.x = x.clone()
+    def set_state(self, t: float, x: torch.Tensor) -> None:
         self.t = t
+        self.x = x.clone()
 
     def reset(self):
         self.set_measurement_parameters()
@@ -64,10 +64,11 @@ class Simulator:
         self.meas_x_values = []
         self.con_u_values = []
 
-    def record_data(self, t: float, x: torch.Tensor, u: torch.Tensor) -> None:
+    def record_data(self, t: float, x: torch.Tensor, u: torch.Tensor = None) -> None:
         self.t_values.append(t)
         self.x_values.append(x)
-        self.u_values.append(u)
+        if u is not None:
+            self.u_values.append(u)
 
     def runge_integrator(
         self, x: torch.Tensor, u: torch.Tensor, dt: float, t: float
@@ -139,9 +140,9 @@ class Simulator:
         nu = last_u + self.u_responsiveness * (nu - last_u)
 
         # change torque shape from (num_envs, 1) to (num_envs, 2)
-        if self.plant.torque_limit[0] == 0:
+        if self.plant.torque_limit[0] == 0 and nu.shape[1] == 1:
             nu = torch.cat([torch.zeros_like(nu), nu], dim=1)
-        elif self.plant.torque_limit[1] == 0:
+        elif self.plant.torque_limit[1] == 0 and nu.shape[1] == 1:
             nu = torch.cat([nu, torch.zeros_like(nu)], dim=1)
 
         # torque noise
@@ -180,5 +181,16 @@ class Simulator:
 
         return realtime
 
-    def simulate(self) -> None:
-        pass
+    def simulate(
+        self, t0: float, x0: torch.Tensor, tf: float, dt: float, controller=None
+    ) -> Tuple[list, list, list]:
+        self.set_state(t0, x0)
+        self.reset()
+        self.record_data(t0, x0.clone(), None)
+
+        total_steps = 0
+        while self.t < tf:
+            _ = self.controller_step(dt, controller)
+            total_steps += self.num_envs
+
+        return self.x_values, self.t_values, self.u_values

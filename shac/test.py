@@ -34,15 +34,13 @@ mpar.set_torque_limit(torque_limit)
 plant = DoublePendulumPlant(model_params=mpar, num_envs=3, device=device)
 sim = Simulator(plant=plant, num_envs=3, device=device)
 
-state = torch.zeros((3, 4), dtype=torch.float32, device=device)
+state = torch.ones((3, 4), dtype=torch.float32, device=device)
 torques = torch.ones((3, 1), dtype=torch.float32, device=device)
 
-sim.set_state(state, 0.0)
 sim.set_measurement_parameters(meas_noise_sigmas=torch.tensor((0, 0, 0, 0)))
 
-print(sim.x)
-print(sim.controller_step(0.002))
-print(sim.x)
+x_values, t_values, u_values = sim.simulate(0.0, state, 2.0, 0.002)
+print(x_values[-20:])
 
 # from double_pendulum.model.plant import DoublePendulumPlant
 # from double_pendulum.simulation.simulation import Simulator
