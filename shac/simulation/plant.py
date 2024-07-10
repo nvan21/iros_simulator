@@ -42,10 +42,7 @@ class DoublePendulumPlant:
 
     def forward_dynamics(self, x: torch.Tensor, u: torch.Tensor) -> torch.Tensor:
         vel = x[:, self.dof :]
-        if self.torque_limit[0] == 0:
-            u = torch.cat([torch.zeros_like(u), u], dim=1)
-        elif self.torque_limit[1] == 0:
-            u = torch.cat([u, torch.zeros_like(u)], dim=1)
+
         M = self.mass_tensor(x)
         C = self.coriolis_tensor(x)
         G = self.gravity_tensor(x)

@@ -32,17 +32,27 @@ mpar.set_cfric([0.0, 0.0])
 mpar.set_torque_limit(torque_limit)
 
 plant = DoublePendulumPlant(model_params=mpar, num_envs=3, device=device)
-sim = Simulator(plant=plant, num_envs=3)
+sim = Simulator(plant=plant, num_envs=3, device=device)
 
-state = torch.ones((3, 4), dtype=torch.float32, device=device)
+state = torch.zeros((3, 4), dtype=torch.float32, device=device)
 torques = torch.ones((3, 1), dtype=torch.float32, device=device)
-print(sim.runge_integrator(state, torques, 0.002, 0.0))
 
-from double_pendulum.model.plant import DoublePendulumPlant
-from double_pendulum.simulation.simulation import Simulator
+sim.set_state(state, 0.0)
+sim.set_measurement_parameters(meas_noise_sigmas=torch.tensor((0, 0, 0, 0)))
 
-plant = DoublePendulumPlant(model_pars=mpar)
-sim = Simulator(plant)
-state = np.array([1, 1, 1, 1])
-tau = np.array([0, 1])
-print(sim.runge_integrator(state, 0.002, 0.0, tau))
+print(sim.x)
+print(sim.controller_step(0.002))
+print(sim.x)
+
+# from double_pendulum.model.plant import DoublePendulumPlant
+# from double_pendulum.simulation.simulation import Simulator
+
+# plant = DoublePendulumPlant(model_pars=mpar)
+# sim = Simulator(plant)
+# state = np.array([1, 2, 1, 1])
+# tau = np.array([0, 1])
+# sim.set_state(0.0, state)
+
+# print(sim.meas_C, sim.meas_C.shape)
+# print(sim.x)
+# print(sim.get_measurement(0.002))
