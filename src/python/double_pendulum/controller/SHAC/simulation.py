@@ -57,6 +57,7 @@ class Simulator:
         r_line: float = 1e3,
         r_vel: float = 1e4,
         r_roa: float = 1e5,
+        v_thresh: float = 8.0,
         goal=None,
         Q=None,
         R=None,
@@ -81,12 +82,11 @@ class Simulator:
             .unsqueeze(0)
             .expand(self.num_envs, -1, -1)
         )
-        print(self.rho, self.vol, self.S)
-
         self.control_line = control_line
         self.r_line = r_line
         self.r_vel = r_vel
         self.r_roa = r_roa
+        self.v_thresh = v_thresh
         if goal is None:
             self.goal = torch.zeros(
                 (self.num_envs, 4), dtype=torch.float32, device=self.device
@@ -222,7 +222,7 @@ class Simulator:
 
         return nu
 
-    def get_reward(self, x: torch.Tensor, u: torch.Tensor) -> None:
+    def get_reward(self, x: torch.Tensor, u: torch.Tensor) -> torch.Tensor:
         """
         There is a base quadratic reward which depends on how close the current state
         is to the goal
@@ -247,9 +247,20 @@ class Simulator:
         reward = -(cost_state + cost_control)
 
         # Bonus criterion 1: control line
-        mask = ee2_pos_y >= self.control_line
+        control_line_mask = ee2_pos_y >= self.control_line
+        control_line_reward = control_line_mask * self.r_line
 
         # Bonus criterion 2: region of attraction check
+        rad = torch.bmm(x_diff.unsqueeze(1), self.S).bmm(x_diff.unsqueeze(2)).squeeze()
+        roa_reward = (rad < self.rho) * self.r_roa
+
+        # Bonus criterion 3: velocity check
+        v1 = torch.abs(x[:, 2]) > self.v_thresh
+        v2 = torch.abs(x[:, 3]) > self.v_thresh
+        velocity_reward = (control_line_mask & (v1 | v2)) * self.r_vel
+
+        # Sum up all bonus rewards
+        reward = reward + control_line_reward + roa_reward - velocity_reward
 
         return reward
 
@@ -293,5 +304,5 @@ class Simulator:
         pass
 
     def _normalize_angles(self, x: torch.Tensor):
-        x[:, :2] = (x[:, :2] + torch.pi) % (2 * torch.pi) - torch.pi
+        x[:, :2] = (x[:, :2]) % (2 * torch.pi)
         return x

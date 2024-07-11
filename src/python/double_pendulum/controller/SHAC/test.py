@@ -33,48 +33,23 @@ mpar.set_torque_limit(torque_limit)
 
 lqr_par_path = f"../../../../../data/controller_parameters/{design}/{model}/{robot}/lqr"
 
-plant = DoublePendulumPlant(model_params=mpar, num_envs=3, device=device)
-sim = Simulator(plant=plant, num_envs=3, device=device)
+num_envs = 2
+plant = DoublePendulumPlant(model_params=mpar, num_envs=num_envs, device=device)
+sim = Simulator(plant=plant, num_envs=num_envs, device=device)
 sim.set_reward_parameters(lqr_load_path=lqr_par_path)
 
-state = torch.ones((3, 4), dtype=torch.float32, device=device)
+state = torch.zeros((num_envs, 4), dtype=torch.float32, device=device)
+state = torch.tensor(
+    ((torch.pi, 0, 0, 0), (torch.pi, 0, 9, 9)),
+    device=device,
+    dtype=torch.float32,
+)
 # state = torch.tensor(((10, 10, 10, 10), (10, 10, 10, 10), (10, 10, 10, 10)))
 sim.set_state(0.0, state)
-torques = torch.ones((3, 2), dtype=torch.float32, device=device)
+torques = torch.ones((num_envs, 2), dtype=torch.float32, device=device)
 
 reward = sim.get_reward(state, torques)
-print(reward)
-test = torch.tensor((1, 2, 3), device=device)
-
-# Define the tensors
-a = np.array([3, 4, 5])
-b = np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
-c = np.array([3, 4, 5])
-
-s = torch.tensor(
-    [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
-)  # 2 environments, 3 state variables each
-goal = torch.tensor([[0.0, 1.0, 2.0], [1.0, 1.0, 1.0]])
-u = torch.tensor(
-    [[0.5, -0.5, 0.0], [0.1, 0.2, 0.3]]
-)  # 2 environments, 3 control inputs each
-
-Q = torch.tensor([[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]])
-R = torch.tensor([[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]])
-
-state_deviation = s - goal
-Q_batch = Q.unsqueeze(0).expand(state_deviation.shape[0], -1, -1)
-R_batch = R.unsqueeze(0).expand(u.shape[0], -1, -1)
-
-cost_state = (
-    torch.bmm(state_deviation.unsqueeze(1), Q_batch)
-    .bmm(state_deviation.unsqueeze(2))
-    .squeeze()
-)
-
-print(cost_state)
-print(a @ b @ c)
-print(np.array([[1]]).shape)
+test = torch.tensor((1, 2, num_envs), device=device)
 
 
 # sim.set_measurement_parameters(meas_noise_sigmas=torch.tensor((0, 0, 0, 0)))
