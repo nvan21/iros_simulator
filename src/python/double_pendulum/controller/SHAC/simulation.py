@@ -1,4 +1,6 @@
 import torch
+import numpy as np
+import os
 
 from typing import TYPE_CHECKING, Tuple
 import time
@@ -47,6 +49,65 @@ class Simulator:
         self, process_noise_sigmas=torch.zeros(4, dtype=torch.float32)
     ):
         self.process_noise_sigmas = process_noise_sigmas.to(self.device)
+
+    def set_reward_parameters(
+        self,
+        lqr_load_path: str,
+        control_line: float = 0.4,
+        r_line: float = 1e3,
+        r_vel: float = 1e4,
+        r_roa: float = 1e5,
+        goal=None,
+        Q=None,
+        R=None,
+    ):
+        # Import LQR parameters
+        self.rho = torch.tensor(
+            np.loadtxt(os.path.join(lqr_load_path, "rho")),
+            dtype=torch.float32,
+            device=self.device,
+        )
+        self.vol = torch.tensor(
+            np.loadtxt(os.path.join(lqr_load_path, "vol")),
+            dtype=torch.float32,
+            device=self.device,
+        )
+        self.S = (
+            torch.tensor(
+                np.loadtxt(os.path.join(lqr_load_path, "Smatrix")),
+                dtype=torch.float32,
+                device=self.device,
+            )
+            .unsqueeze(0)
+            .expand(self.num_envs, -1, -1)
+        )
+        print(self.rho, self.vol, self.S)
+
+        self.control_line = control_line
+        self.r_line = r_line
+        self.r_vel = r_vel
+        self.r_roa = r_roa
+        if goal is None:
+            self.goal = torch.zeros(
+                (self.num_envs, 4), dtype=torch.float32, device=self.device
+            )
+            self.goal[:, 0] = torch.pi
+
+        if Q is None:
+            self.Q = torch.zeros(
+                (self.num_envs, 4, 4), dtype=torch.float32, device=self.device
+            )
+            self.Q[:, 0, 0] = 100
+            self.Q[:, 1, 1] = 105
+            self.Q[:, 2, 2] = 1
+            self.Q[:, 3, 3] = 1
+
+        if R is None:
+            self.R = torch.zeros(
+                (self.num_envs, 2, 2), dtype=torch.float32, device=self.device
+            )
+            self.R[:, 0, 0] = 0.01
+            self.R[:, 1, 1] = 0.01
 
     def set_state(self, t: float, x: torch.Tensor) -> None:
         self.t = t
@@ -122,8 +183,14 @@ class Simulator:
             u = controller.get_control_output(x=x, t=t)
             if time.time() - t0 > dt:
                 realtime = False
+
+            # Fix shape to be (num_envs, 2) instead of (1, 2)
+            if self.plant.torque_limit[0] == 0:
+                u = torch.cat([torch.zeros_like(u), u], dim=1)
+            elif self.plant.torque_limit[1] == 0 and u.shape[1] == 1:
+                u = torch.cat([u, torch.zeros_like(u)], dim=1)
         else:
-            u = torch.zeros((self.num_envs, 1), device=self.device)
+            u = torch.zeros((self.num_envs, 2), device=self.device)
 
         self.con_u_values.append(u.clone())
 
@@ -136,17 +203,11 @@ class Simulator:
         if len(self.u_values) > 0:
             last_u = self.u_values[-1]
         else:
-            last_u = torch.zeros((self.num_envs, 1), device=self.device)
+            last_u = torch.zeros((self.num_envs, 2), device=self.device)
         nu = last_u + self.u_responsiveness * (nu - last_u)
 
-        # change torque shape from (num_envs, 1) to (num_envs, 2)
-        if self.plant.torque_limit[0] == 0 and nu.shape[1] == 1:
-            nu = torch.cat([torch.zeros_like(nu), nu], dim=1)
-        elif self.plant.torque_limit[1] == 0 and nu.shape[1] == 1:
-            nu = torch.cat([nu, torch.zeros_like(nu)], dim=1)
-
         # torque noise
-        noise = torch.randn_like(u) * self.u_noise_sigmas
+        noise = torch.randn_like(nu) * self.u_noise_sigmas
         nu = nu + noise
 
         # clip torques
@@ -160,6 +221,37 @@ class Simulator:
         # TODO: add perturbance for joints
 
         return nu
+
+    def get_reward(self, x: torch.Tensor, u: torch.Tensor) -> None:
+        """
+        There is a base quadratic reward which depends on how close the current state
+        is to the goal
+
+        There are three different checks for bonus reward:
+        1) If the second pendulum (the one at the end of the configuration) is
+        above the control line, then give bonus reward
+        2) If the state is in the region of attraction, then give a bonus reward
+        3) If the first condition is true and either one of the pendulum velocities
+        is above the threshold, then penalize for high velocity
+        """
+        x = self._normalize_angles(x)
+        coordinates = self.plant.forward_kinematics(x)
+        ee2_pos_y = coordinates[:, 3]
+        x_diff = x - self.goal
+
+        # Calculate quadratic reward
+        cost_state = (
+            torch.bmm(x_diff.unsqueeze(1), self.Q).bmm(x_diff.unsqueeze(2)).squeeze()
+        )
+        cost_control = torch.bmm(u.unsqueeze(1), self.R).bmm(u.unsqueeze(2)).squeeze()
+        reward = -(cost_state + cost_control)
+
+        # Bonus criterion 1: control line
+        mask = ee2_pos_y >= self.control_line
+
+        # Bonus criterion 2: region of attraction check
+
+        return reward
 
     def step(self, u: torch.Tensor, dt: float) -> None:
         # Add new simulator step
@@ -181,16 +273,25 @@ class Simulator:
 
         return realtime
 
-    def simulate(
-        self, t0: float, x0: torch.Tensor, tf: float, dt: float, controller=None
+    def simulate_step(
+        self, t0: float, x0: torch.Tensor, t_steps: float, dt: float, controller=None
     ) -> Tuple[list, list, list]:
         self.set_state(t0, x0)
         self.reset()
         self.record_data(t0, x0.clone(), None)
 
-        total_steps = 0
+        tf = self.t
         while self.t < tf:
             _ = self.controller_step(dt, controller)
             total_steps += self.num_envs
 
         return self.x_values, self.t_values, self.u_values
+
+    def simulate_episode(
+        self, t0: float, x0: torch.Tensor, t_steps: int, dt: float, controller=None
+    ) -> None:
+        pass
+
+    def _normalize_angles(self, x: torch.Tensor):
+        x[:, :2] = (x[:, :2] + torch.pi) % (2 * torch.pi) - torch.pi
+        return x

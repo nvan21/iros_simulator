@@ -7,6 +7,11 @@ if TYPE_CHECKING:
     from double_pendulum.model.model_parameters import model_parameters
 
 
+# TODO: Might not need this
+def normalize_angle(angle: torch.Tensor) -> torch.Tensor:
+    return ((angle + torch.pi) % (2 * torch.pi)) - torch.pi
+
+
 class DoublePendulumPlant:
     def __init__(
         self, model_params: "model_parameters", num_envs: float, device: torch.device
@@ -37,8 +42,18 @@ class DoublePendulumPlant:
         else:
             self.D = [[1, 0], [0, 1]]
 
-    def forward_kinematics(self, pos: torch.Tensor) -> torch.Tensor:
-        pass
+    def forward_kinematics(self, x: torch.Tensor) -> torch.Tensor:
+        angles = x[:, :2]
+        ee1_pos_x = self.l[0] * torch.sin(angles[:, 0])
+        ee1_pos_y = -self.l[0] * torch.cos(angles[:, 0])
+
+        ee2_pos_x = ee1_pos_x + self.l[1] * torch.sin(angles[:, 0] + angles[:, 1])
+        ee2_pos_y = ee1_pos_y - self.l[1] * torch.cos(angles[:, 0] + angles[:, 1])
+
+        coordinates = torch.stack((ee1_pos_x, ee1_pos_y, ee2_pos_x, ee2_pos_y)).T
+
+        # for each row (env) the shape is (x1, y1, x2, y2)
+        return coordinates
 
     def forward_dynamics(self, x: torch.Tensor, u: torch.Tensor) -> torch.Tensor:
         vel = x[:, self.dof :]
