@@ -1,0 +1,83 @@
+tensor([[ 0.0000,  4.3465],
+        [ 0.0000,  3.7451],
+        [ 0.0000,  4.5928],
+        [ 0.0000,  3.4482],
+        [ 0.0000,  1.0021],
+        [ 0.0000,  4.2122],
+        [ 0.0000,  4.0649],
+        [-0.0000, -2.2062],
+        [ 0.0000,  2.2984],
+        [ 0.0000,  1.5231],
+        [ 0.0000,  3.2771],
+        [ 0.0000,  3.4805],
+        [ 0.0000,  0.5832],
+        [ 0.0000,  4.5223],
+        [ 0.0000,  2.8941],
+        [ 0.0000,  2.9331],
+        [ 0.0000,  4.5809],
+        [ 0.0000,  2.8902],
+        [ 0.0000,  4.4165],
+        [ 0.0000,  4.6514],
+        [ 0.0000,  4.6847],
+        [ 0.0000,  4.1679],
+        [ 0.0000,  2.9905],
+        [ 0.0000,  4.6399],
+        [ 0.0000,  4.2501],
+        [ 0.0000,  4.5126],
+        [ 0.0000,  3.9748],
+        [ 0.0000,  1.5652],
+        [ 0.0000,  4.2028],
+        [ 0.0000,  4.8651],
+        [-0.0000, -1.4899],
+        [ 0.0000,  4.7244],
+        [ 0.0000,  4.5465],
+        [ 0.0000,  3.9391],
+        [ 0.0000,  1.3537],
+        [-0.0000, -1.4024],
+        [ 0.0000,  1.1305],
+        [-0.0000, -1.6473],
+        [ 0.0000,  3.8867],
+        [ 0.0000,  4.1689],
+        [ 0.0000,  3.6095],
+        [ 0.0000,  3.3180],
+        [ 0.0000,  0.4539],
+        [ 0.0000,  4.6638],
+        [ 0.0000,  1.2546],
+        [ 0.0000,  3.4742],
+        [ 0.0000,  3.0498],
+        [ 0.0000,  4.2652],
+        [ 0.0000,  4.3130],
+        [ 0.0000,  1.3851],
+        [ 0.0000,  2.7845],
+        [ 0.0000,  4.8929],
+        [ 0.0000,  4.0019],
+        [ 0.0000,  2.4562],
+        [ 0.0000,  4.7612],
+        [ 0.0000,  3.8239],
+        [ 0.0000,  1.2799],
+        [ 0.0000,  2.5508],
+        [ 0.0000,  4.7276],
+        [ 0.0000,  4.8539],
+        [ 0.0000,  2.8198],
+        [ 0.0000,  2.3627],
+        [ 0.0000,  4.1988],
+        [ 0.0000,  3.5741]], device='cuda:0', grad_fn=<MulBackward0>)
+Traceback (most recent call last):
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/train.py", line 79, in <module>
+    shac.train()
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/algo.py", line 177, in train
+    rets, states, episode_reward = self.rollout(states)
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/algo.py", line 280, in rollout
+    states, rewards, dones, truncateds, info = self.envs.step(self)
+                                               ^^^^^^^^^^^^^^^^^^^^
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/simulation.py", line 305, in step
+    nu = self.get_real_applied_u(u, self.t, self.dt)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/flemingc/nvan21/miniconda3/envs/iros/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/simulation.py", line 231, in get_real_applied_u
+    nu = last_u + self.u_responsiveness * (nu - last_u)
+                                           ~~~^~~~~~~~
+RuntimeError: The size of tensor a (4) must match the size of tensor b (2) at non-singleton dimension 1

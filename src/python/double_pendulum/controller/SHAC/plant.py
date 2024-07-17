@@ -42,6 +42,7 @@ class DoublePendulumPlant:
         else:
             self.D = [[1, 0], [0, 1]]
 
+    @torch.no_grad()
     def forward_kinematics(self, x: torch.Tensor) -> torch.Tensor:
         angles = x[:, :2]
         ee1_pos_x = self.l[0] * torch.sin(angles[:, 0])

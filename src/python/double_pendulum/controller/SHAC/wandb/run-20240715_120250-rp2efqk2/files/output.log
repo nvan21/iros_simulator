@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/train.py", line 75, in <module>
+    shac.train()
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/algo.py", line 165, in train
+    rets, states = self.rollout(states)
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/algo.py", line 288, in rollout
+    running_rewards[step, :] + self.params.gamma * rewards
+                               ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+TypeError: can't multiply sequence by non-int of type 'float'

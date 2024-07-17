@@ -1,0 +1,197 @@
+2024-07-15 16:19:54,051 INFO    StreamThr :181973 [internal.py:wandb_internal():85] W&B internal server running at pid: 181973, started at: 2024-07-15 16:19:54.050286
+2024-07-15 16:19:54,052 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: status
+2024-07-15 16:19:54,053 INFO    WriterThread:181973 [datastore.py:open_for_write():87] open: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/run-ocnzlsl0.wandb
+2024-07-15 16:19:54,054 DEBUG   SenderThread:181973 [sender.py:send():379] send: header
+2024-07-15 16:19:54,058 DEBUG   SenderThread:181973 [sender.py:send():379] send: run
+2024-07-15 16:19:54,281 INFO    SenderThread:181973 [dir_watcher.py:__init__():211] watching files in: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files
+2024-07-15 16:19:54,281 INFO    SenderThread:181973 [sender.py:_start_run_threads():1188] run started: ocnzlsl0 with start time 1721078394.050891
+2024-07-15 16:19:54,287 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: check_version
+2024-07-15 16:19:54,287 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: check_version
+2024-07-15 16:19:54,365 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: run_start
+2024-07-15 16:19:54,369 DEBUG   HandlerThread:181973 [system_info.py:__init__():26] System info init
+2024-07-15 16:19:54,369 DEBUG   HandlerThread:181973 [system_info.py:__init__():41] System info init done
+2024-07-15 16:19:54,369 INFO    HandlerThread:181973 [system_monitor.py:start():194] Starting system monitor
+2024-07-15 16:19:54,369 INFO    SystemMonitor:181973 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-15 16:19:54,369 INFO    HandlerThread:181973 [system_monitor.py:probe():214] Collecting system info
+2024-07-15 16:19:54,370 INFO    SystemMonitor:181973 [interfaces.py:start():188] Started cpu monitoring
+2024-07-15 16:19:54,371 INFO    SystemMonitor:181973 [interfaces.py:start():188] Started disk monitoring
+2024-07-15 16:19:54,372 INFO    SystemMonitor:181973 [interfaces.py:start():188] Started gpu monitoring
+2024-07-15 16:19:54,372 INFO    SystemMonitor:181973 [interfaces.py:start():188] Started memory monitoring
+2024-07-15 16:19:54,373 INFO    SystemMonitor:181973 [interfaces.py:start():188] Started network monitoring
+2024-07-15 16:19:54,399 DEBUG   HandlerThread:181973 [system_info.py:probe():152] Probing system
+2024-07-15 16:19:54,402 DEBUG   HandlerThread:181973 [system_info.py:_probe_git():137] Probing git
+2024-07-15 16:19:54,409 DEBUG   HandlerThread:181973 [system_info.py:_probe_git():145] Probing git done
+2024-07-15 16:19:54,409 DEBUG   HandlerThread:181973 [system_info.py:probe():200] Probing system done
+2024-07-15 16:19:54,409 DEBUG   HandlerThread:181973 [system_monitor.py:probe():223] {'os': 'Linux-5.14.0-284.64.1.el9_2.x86_64-x86_64-with-glibc2.34', 'python': '3.11.8', 'heartbeatAt': '2024-07-15T21:19:54.399141', 'startedAt': '2024-07-15T21:19:54.036883', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/train.py', 'codePathLocal': 'train.py', 'codePath': 'src/python/double_pendulum/controller/SHAC/train.py', 'git': {'remote': 'https://github.com/nvan21/iros_simulator.git', 'commit': '9bdc70160dde7ce214091656ae275df4a60a0983'}, 'email': 'nvan21@iastate.edu', 'root': '/work/flemingc/nvan21/projects/iros_simulator', 'host': 'nova22-gpu-5', 'username': 'nvan21', 'executable': '/work/flemingc/nvan21/miniconda3/envs/iros/bin/python', 'cpu_count': 48, 'cpu_count_logical': 48, 'cpu_freq': {'current': 2725.5766875000004, 'min': 1500.0, 'max': 2650.0}, 'cpu_freq_per_core': [{'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 3624.88, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 3613.228, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}], 'disk': {'/': {'total': 219.4689598083496, 'used': 20.779327392578125}}, 'gpu': 'NVIDIA A100 80GB PCIe', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}], 'memory': {'total': 503.69799423217773}}
+2024-07-15 16:19:54,410 INFO    HandlerThread:181973 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-15 16:19:54,410 INFO    HandlerThread:181973 [system_monitor.py:probe():227] Publishing system info
+2024-07-15 16:19:54,410 DEBUG   HandlerThread:181973 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-15 16:19:55,283 INFO    Thread-12 :181973 [dir_watcher.py:_on_file_created():271] file/dir created: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/conda-environment.yaml
+2024-07-15 16:19:57,131 DEBUG   HandlerThread:181973 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-15 16:19:57,133 INFO    HandlerThread:181973 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-15 16:19:57,144 DEBUG   SenderThread:181973 [sender.py:send():379] send: files
+2024-07-15 16:19:57,144 INFO    SenderThread:181973 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-15 16:19:57,211 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-15 16:19:57,212 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: python_packages
+2024-07-15 16:19:57,214 DEBUG   SenderThread:181973 [sender.py:send():379] send: telemetry
+2024-07-15 16:19:57,214 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-15 16:19:57,214 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-15 16:19:57,215 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: stop_status
+2024-07-15 16:19:57,284 INFO    Thread-12 :181973 [dir_watcher.py:_on_file_modified():288] file/dir modified: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/conda-environment.yaml
+2024-07-15 16:19:57,284 INFO    Thread-12 :181973 [dir_watcher.py:_on_file_created():271] file/dir created: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/requirements.txt
+2024-07-15 16:19:57,284 INFO    Thread-12 :181973 [dir_watcher.py:_on_file_created():271] file/dir created: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/wandb-metadata.json
+2024-07-15 16:19:57,429 DEBUG   SenderThread:181973 [sender.py:send():379] send: telemetry
+2024-07-15 16:19:57,429 DEBUG   SenderThread:181973 [sender.py:send():379] send: metric
+2024-07-15 16:19:57,429 DEBUG   SenderThread:181973 [sender.py:send():379] send: metric
+2024-07-15 16:19:57,429 DEBUG   SenderThread:181973 [sender.py:send():379] send: metric
+2024-07-15 16:19:57,430 WARNING SenderThread:181973 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-07-15 16:19:57,430 DEBUG   SenderThread:181973 [sender.py:send():379] send: metric
+2024-07-15 16:19:57,430 WARNING SenderThread:181973 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-07-15 16:19:57,521 INFO    wandb-upload_0:181973 [upload_job.py:push():130] Uploaded file /mnt/job-temp/nvan21/5350314/tmpv5jg6arlwandb/oktm6483-wandb-metadata.json
+2024-07-15 16:19:58,214 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-15 16:19:59,214 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-15 16:19:59,431 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: status_report
+2024-07-15 16:19:59,935 DEBUG   SenderThread:181973 [sender.py:send():379] send: exit
+2024-07-15 16:19:59,935 INFO    SenderThread:181973 [sender.py:send_exit():586] handling exit code: 1
+2024-07-15 16:19:59,935 INFO    SenderThread:181973 [sender.py:send_exit():588] handling runtime: 5
+2024-07-15 16:19:59,937 INFO    SenderThread:181973 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-15 16:19:59,937 INFO    SenderThread:181973 [sender.py:send_exit():594] send defer
+2024-07-15 16:19:59,938 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:19:59,938 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-15 16:19:59,938 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:19:59,938 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-15 16:19:59,938 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 1
+2024-07-15 16:19:59,938 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:19:59,938 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-15 16:19:59,939 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:19:59,939 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-15 16:19:59,939 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 2
+2024-07-15 16:19:59,939 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:19:59,939 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-15 16:19:59,940 INFO    HandlerThread:181973 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-15 16:19:59,940 INFO    HandlerThread:181973 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-15 16:19:59,941 DEBUG   SystemMonitor:181973 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-15 16:19:59,941 INFO    HandlerThread:181973 [interfaces.py:finish():200] Joined disk monitor
+2024-07-15 16:19:59,941 DEBUG   SystemMonitor:181973 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-15 16:19:59,941 DEBUG   SystemMonitor:181973 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-15 16:20:00,016 INFO    HandlerThread:181973 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-15 16:20:00,016 INFO    HandlerThread:181973 [interfaces.py:finish():200] Joined memory monitor
+2024-07-15 16:20:00,016 INFO    HandlerThread:181973 [interfaces.py:finish():200] Joined network monitor
+2024-07-15 16:20:00,018 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:00,018 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-15 16:20:00,018 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 3
+2024-07-15 16:20:00,018 DEBUG   SenderThread:181973 [sender.py:send():379] send: stats
+2024-07-15 16:20:00,018 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:00,020 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-15 16:20:00,020 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:00,020 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-15 16:20:00,020 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 4
+2024-07-15 16:20:00,021 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:00,021 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-15 16:20:00,021 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:00,021 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-15 16:20:00,021 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 5
+2024-07-15 16:20:00,021 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:00,021 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-15 16:20:00,021 DEBUG   SenderThread:181973 [sender.py:send():379] send: summary
+2024-07-15 16:20:00,023 INFO    SenderThread:181973 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-15 16:20:00,023 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:00,024 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-15 16:20:00,024 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 6
+2024-07-15 16:20:00,024 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:00,024 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-15 16:20:00,024 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:00,025 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-15 16:20:00,027 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: status_report
+2024-07-15 16:20:00,107 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 7
+2024-07-15 16:20:00,107 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:00,108 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-15 16:20:00,108 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:00,108 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-15 16:20:00,286 INFO    Thread-12 :181973 [dir_watcher.py:_on_file_modified():288] file/dir modified: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/config.yaml
+2024-07-15 16:20:00,286 INFO    Thread-12 :181973 [dir_watcher.py:_on_file_created():271] file/dir created: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/output.log
+2024-07-15 16:20:00,286 INFO    Thread-12 :181973 [dir_watcher.py:_on_file_created():271] file/dir created: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/wandb-summary.json
+2024-07-15 16:20:00,935 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-15 16:20:01,896 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 8
+2024-07-15 16:20:01,896 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: poll_exit
+2024-07-15 16:20:01,896 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:01,897 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-15 16:20:01,897 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:01,898 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-15 16:20:01,898 INFO    SenderThread:181973 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-15 16:20:01,898 INFO    SenderThread:181973 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-15 16:20:01,915 INFO    SenderThread:181973 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-15 16:20:01,919 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 9
+2024-07-15 16:20:01,919 DEBUG   SenderThread:181973 [sender.py:send():379] send: artifact
+2024-07-15 16:20:01,919 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:01,920 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-15 16:20:01,936 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-15 16:20:02,288 INFO    Thread-12 :181973 [dir_watcher.py:_on_file_modified():288] file/dir modified: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/output.log
+2024-07-15 16:20:02,381 INFO    SenderThread:181973 [sender.py:send_artifact():1530] sent artifact job-https___github.com_nvan21_iros_simulator.git_src_python_double_pendulum_controller_SHAC_train.py - {'id': 'QXJ0aWZhY3Q6OTgwMjM1MjU3', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI1NDE5MDI5NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTgwMjM1MjU3', 'versionIndex': 9}}}
+2024-07-15 16:20:02,381 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:02,381 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-15 16:20:02,381 INFO    SenderThread:181973 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-15 16:20:03,289 INFO    SenderThread:181973 [dir_watcher.py:finish():388] scan: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files
+2024-07-15 16:20:03,290 INFO    SenderThread:181973 [dir_watcher.py:finish():402] scan save: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/wandb-metadata.json wandb-metadata.json
+2024-07-15 16:20:03,290 INFO    SenderThread:181973 [dir_watcher.py:finish():402] scan save: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/output.log output.log
+2024-07-15 16:20:03,290 INFO    SenderThread:181973 [dir_watcher.py:finish():402] scan save: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/config.yaml config.yaml
+2024-07-15 16:20:03,292 INFO    SenderThread:181973 [dir_watcher.py:finish():402] scan save: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/wandb-summary.json wandb-summary.json
+2024-07-15 16:20:03,293 INFO    SenderThread:181973 [dir_watcher.py:finish():402] scan save: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/conda-environment.yaml conda-environment.yaml
+2024-07-15 16:20:03,295 INFO    SenderThread:181973 [dir_watcher.py:finish():402] scan save: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/requirements.txt requirements.txt
+2024-07-15 16:20:03,296 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 10
+2024-07-15 16:20:03,296 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: poll_exit
+2024-07-15 16:20:03,297 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:03,298 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-15 16:20:03,298 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:03,299 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-15 16:20:03,299 INFO    SenderThread:181973 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-15 16:20:03,527 INFO    wandb-upload_1:181973 [upload_job.py:push():130] Uploaded file /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/config.yaml
+2024-07-15 16:20:03,616 INFO    wandb-upload_0:181973 [upload_job.py:push():130] Uploaded file /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/output.log
+2024-07-15 16:20:03,645 INFO    wandb-upload_2:181973 [upload_job.py:push():130] Uploaded file /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/wandb-summary.json
+2024-07-15 16:20:03,692 INFO    wandb-upload_4:181973 [upload_job.py:push():130] Uploaded file /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/requirements.txt
+2024-07-15 16:20:03,693 INFO    wandb-upload_3:181973 [upload_job.py:push():130] Uploaded file /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/files/conda-environment.yaml
+2024-07-15 16:20:03,893 INFO    Thread-11 (_thread_body):181973 [sender.py:transition_state():614] send defer: 11
+2024-07-15 16:20:03,894 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:03,895 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-15 16:20:03,895 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:03,896 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-15 16:20:03,896 INFO    SenderThread:181973 [file_pusher.py:join():175] waiting for file pusher
+2024-07-15 16:20:03,896 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 12
+2024-07-15 16:20:03,897 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:03,897 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-15 16:20:03,897 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:03,897 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-15 16:20:03,897 INFO    SenderThread:181973 [file_stream.py:finish():601] file stream finish called
+2024-07-15 16:20:03,936 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-15 16:20:04,194 INFO    SenderThread:181973 [file_stream.py:finish():605] file stream finish is done
+2024-07-15 16:20:04,194 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 13
+2024-07-15 16:20:04,194 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: poll_exit
+2024-07-15 16:20:04,194 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:04,195 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-15 16:20:04,195 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:04,195 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-15 16:20:04,195 INFO    SenderThread:181973 [sender.py:transition_state():614] send defer: 14
+2024-07-15 16:20:04,196 DEBUG   SenderThread:181973 [sender.py:send():379] send: final
+2024-07-15 16:20:04,196 DEBUG   SenderThread:181973 [sender.py:send():379] send: footer
+2024-07-15 16:20:04,196 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: defer
+2024-07-15 16:20:04,196 INFO    HandlerThread:181973 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-15 16:20:04,197 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: defer
+2024-07-15 16:20:04,197 INFO    SenderThread:181973 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-15 16:20:04,197 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-15 16:20:04,197 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: server_info
+2024-07-15 16:20:04,197 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-15 16:20:04,198 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: poll_exit
+2024-07-15 16:20:04,198 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-15 16:20:04,198 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: server_info
+2024-07-15 16:20:04,198 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-15 16:20:04,200 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-15 16:20:04,256 DEBUG   SenderThread:181973 [sender.py:send_request():406] send_request: poll_exit
+2024-07-15 16:20:04,257 INFO    MainThread:181973 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-15 16:20:04,257 INFO    MainThread:181973 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-15 16:20:04,257 INFO    MainThread:181973 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-07-15 16:20:04,257 DEBUG   HandlerThread:181973 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-15 16:20:04,258 INFO    HandlerThread:181973 [handler.py:finish():882] shutting down handler
+2024-07-15 16:20:05,198 INFO    WriterThread:181973 [datastore.py:close():296] close: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240715_161954-ocnzlsl0/run-ocnzlsl0.wandb
+2024-07-15 16:20:05,257 INFO    SenderThread:181973 [sender.py:finish():1608] shutting down sender
+2024-07-15 16:20:05,257 INFO    SenderThread:181973 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-15 16:20:05,257 INFO    SenderThread:181973 [file_pusher.py:join():175] waiting for file pusher

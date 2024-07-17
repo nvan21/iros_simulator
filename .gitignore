@@ -31,6 +31,9 @@ leaderboard/acrobot/simulation_v2/data/*
 leaderboard/acrobot/robustness_v2/data/*
 leaderboard/pendubot/simulation_v2/data/*
 leaderboard/pendubot/robustness_v2/data/*
+src/python/double_pendulum/controller/SHAC/data
+src/python/double_pendulum/controller/SHAC/wandb
+src/python/double_pendulum/controller/SHAC/weights
 data/experiment_records/*
 *local*
 

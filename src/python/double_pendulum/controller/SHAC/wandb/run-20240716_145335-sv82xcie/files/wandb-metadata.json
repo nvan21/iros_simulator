@@ -1,0 +1,288 @@
+{
+    "os": "Linux-5.14.0-284.64.1.el9_2.x86_64-x86_64-with-glibc2.34",
+    "python": "3.11.8",
+    "heartbeatAt": "2024-07-16T19:53:36.264411",
+    "startedAt": "2024-07-16T19:53:35.877588",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "src/python/double_pendulum/controller/SHAC/train.py",
+    "git": {
+        "remote": "https://github.com/nvan21/iros_simulator.git",
+        "commit": "9bdc70160dde7ce214091656ae275df4a60a0983"
+    },
+    "email": "nvan21@iastate.edu",
+    "root": "/work/flemingc/nvan21/projects/iros_simulator",
+    "host": "nova22-gpu-5",
+    "username": "nvan21",
+    "executable": "/work/flemingc/nvan21/miniconda3/envs/iros/bin/python",
+    "cpu_count": 48,
+    "cpu_count_logical": 48,
+    "cpu_freq": {
+        "current": 2669.3813541666664,
+        "min": 1500.0,
+        "max": 2650.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 3590.909,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2639.396,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        },
+        {
+            "current": 2650.0,
+            "min": 1500.0,
+            "max": 2650.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 219.4689598083496,
+            "used": 21.432159423828125
+        }
+    },
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100 80GB PCIe",
+            "memory_total": 85899345920
+        }
+    ],
+    "memory": {
+        "total": 503.69799423217773
+    }
+}

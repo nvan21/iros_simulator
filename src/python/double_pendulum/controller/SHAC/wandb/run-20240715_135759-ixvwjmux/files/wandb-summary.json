@@ -1,0 +1,1 @@
+{"step": 2048000, "epoch": 999, "step/actor_loss": 4366.21435546875, "step/critic_loss": 1459888199.1122656, "step/rewards": -107565.60643493652, "epoch/actor_loss": 4366.21435546875, "epoch/critic_loss": 1459888199.1122656, "epoch/rewards": -107565.60643493652, "_timestamp": 1721070309.368412, "_runtime": 430.11558508872986, "_step": 999, "_wandb": {"runtime": 429}}

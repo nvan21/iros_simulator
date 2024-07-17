@@ -1,5 +1,6 @@
 import os
 import numpy as np
+import pickle
 import gymnasium as gym
 from stable_baselines3 import SAC
 from stable_baselines3.sac.policies import MlpPolicy
@@ -100,11 +101,11 @@ elif robot == "acrobot":
     r_lqr = 1e5
 
 model_par_path = (
-        "../../../data/system_identification/identified_parameters/"
-        + design
-        + "/"
-        + model
-        + "/model_parameters.yml"
+    "../../../data/system_identification/identified_parameters/"
+    + design
+    + "/"
+    + model
+    + "/model_parameters.yml"
 )
 
 mpar = model_parameters(filepath=model_par_path)
@@ -128,15 +129,15 @@ max_steps = 1000
 termination = False
 ############################################################################
 
-#tuning parameter
-n_envs = 100 # we found n_envs > 50 has very little improvement in training speed.
-training_steps = 3e7 # default = 1e6
+# tuning parameter
+n_envs = 100  # we found n_envs > 50 has very little improvement in training speed.
+training_steps = 1e6  # default = 1e6
 verbose = 1
 # reward_threshold = -0.01
 reward_threshold = 1e10
-eval_freq=2500
-n_eval_episodes=10
-learning_rate=0.01
+eval_freq = 2500
+n_eval_episodes = 10
+learning_rate = 0.01
 ##############################################################################
 # initialize double pendulum dynamics
 dynamics_func = double_pendulum_dynamics_func(
@@ -152,10 +153,17 @@ rho = np.loadtxt(os.path.join(load_path, "rho"))
 vol = np.loadtxt(os.path.join(load_path, "vol"))
 S = np.loadtxt(os.path.join(load_path, "Smatrix"))
 
+
 def check_if_state_in_roa(S, rho, x):
     xdiff = x - np.array([np.pi, 0.0, 0.0, 0.0])
     rad = np.einsum("i,ij,j", xdiff, S, xdiff)
     return rad < rho, rad
+
+
+rewards = []
+observations = []
+actions = []
+
 
 def reward_func(observation, action):
     # define reward para according to robot type
@@ -178,7 +186,7 @@ def reward_func(observation, action):
 
     u = 5.0 * action
 
-    goal = [np.pi, 0., 0., 0.]
+    goal = [np.pi, 0.0, 0.0, 0.0]
 
     y = wrap_angles_diff(s)
 
@@ -205,7 +213,6 @@ def reward_func(observation, action):
     if flag and (np.abs(y[2]) > v_thresh or np.abs(y[3]) > v_thresh):
         vflag = True
 
-
     # reward calculation
     ## stage1: quadratic reward
     r = np.einsum("i, ij, j", s - goal, Q, s - goal) + np.einsum("i, ij, j", u, R, u)
@@ -213,7 +220,7 @@ def reward_func(observation, action):
 
     ## stage2: control line reward
     if flag:
-        print("stage1 reward=",reward)
+        print("stage1 reward=", reward)
         reward += r_line
         print("stage2 reward=", reward)
         ## stage 3: roa reward
@@ -228,7 +235,20 @@ def reward_func(observation, action):
     else:
         reward = reward
 
+    # rewards.append(reward)
+    # observations.append(observation)
+    # actions.append(action)
+
+    # if len(rewards) > 500:
+    #     with open("reward_debug_variables.pkl", "wb") as f:
+    #         pickle.dump(
+    #             {"rew": rewards, "obs": observations, "actions": actions},
+    #             f,
+    #         )
+    #         print("dumping rewards")
+    #         exit()
     return reward
+
 
 def terminated_func(observation):
     s = np.array(
@@ -249,15 +269,19 @@ def terminated_func(observation):
     else:
         return False
 
+
 def noisy_reset_func():
     rand = np.random.rand(4) * 0.01
     rand[2:] = rand[2:] - 0.05
     observation = [-1.0, -1.0, 0.0, 0.0] + rand
+    observation = [np.pi, 0.0, 0.0, 0.0]  # TODO: Added this for easy resets
     return observation
+
 
 def zero_reset_func():
     observation = [-1.0, -1.0, 0.0, 0.0]
     return observation
+
 
 # initialize vectorized environment
 env = CustomEnv(
@@ -304,8 +328,7 @@ callback_on_best = StopTrainingOnRewardThreshold(
 eval_callback = EvalCallback(
     eval_env,
     callback_on_new_best=callback_on_best,
-    best_model_save_path=os.path.join(log_dir,
-                                      "best_model"),
+    best_model_save_path=os.path.join(log_dir, "best_model"),
     log_path=log_dir,
     eval_freq=eval_freq,
     verbose=verbose,
@@ -327,5 +350,3 @@ if warm_start:
     agent.set_parameters(load_path_or_dict=warm_start_path)
 
 agent.learn(total_timesteps=training_steps, callback=eval_callback)
-
-

@@ -13,29 +13,29 @@ from double_pendulum.controller.SAC.SAC_controller import SACController
 from double_pendulum.simulation.gym_env import (
     double_pendulum_dynamics_func,
 )
+
 """
 This testing script is purely for testing the behaviour of SAC controller in swing-up task.
 """
 
 
-
 # hyperparameters
-# robot = "pendubot"
-robot = "acrobot"
+robot = "pendubot"
+# robot = "acrobot"
 
 if robot == "pendubot":
     torque_limit = [5.0, 0.0]
     active_act = 0
 
-    design = "design_A.0"
-    model = "model_2.0"
-    model_path = "../../../data/policies/design_A.0/model_2.0/pendubot/SAC/sac_model"
-    scaling_state = True
+    # design = "design_A.0"
+    # model = "model_2.0"
+    # model_path = "../../../data/policies/design_A.0/model_2.0/pendubot/SAC/sac_model"
+    # scaling_state = True
 
-    # design = "design_C.1"
-    # model = "model_1.0"
-    # model_path = "../../../data/policies/design_C.1/model_1.0/pendubot/SAC/sac_model.zip"
-    # scaling_state = False
+    design = "design_C.1"
+    model = "model_1.0"
+    model_path = "../../../data/policies/design_C.1/model_1.0/pendubot/SAC/best_model"
+    scaling_state = True
 
 elif robot == "acrobot":
     torque_limit = [0.0, 5.0]
@@ -49,7 +49,7 @@ elif robot == "acrobot":
     design = "design_C.1"
     model = "model_1.0"
     scaling_state = True
-    model_path = "../../../data/policies/design_C.1/model_1.0/acrobot/SAC/sac_model.zip"
+    model_path = "../../../data/policies/design_C.1/model_1.0/acrobot/SAC/sac_model"
 
 # import model parameter
 model_par_path = (
@@ -83,15 +83,12 @@ dynamics_func = double_pendulum_dynamics_func(
     integrator=integrator,
     robot=robot,
     state_representation=2,
-    scaling=scaling_state
+    scaling=scaling_state,
 )
 
 # initialize sac controller
 controller = SACController(
-    model_path = model_path,
-    dynamics_func=dynamics_func,
-    dt=dt,
-    scaling=scaling_state
+    model_path=model_path, dynamics_func=dynamics_func, dt=dt, scaling=scaling_state
 )
 controller.init()
 
@@ -103,15 +100,15 @@ T, X, U = sim.simulate_and_animate(
     dt=dt,
     controller=controller,
     integrator=integrator,
-    save_video=False,
+    save_video=True,
 )
 
 # plot time series
-plot_timeseries(
-    T,
-    X,
-    U,
-    X_meas=sim.meas_x_values,
-    pos_y_lines=[np.pi],
-    tau_y_lines=[-torque_limit[active_act], torque_limit[active_act]],
-)
+# plot_timeseries(
+#     T,
+#     X,
+#     U,
+#     X_meas=sim.meas_x_values,
+#     pos_y_lines=[np.pi],
+#     tau_y_lines=[-torque_limit[active_act], torque_limit[active_act]],
+# )

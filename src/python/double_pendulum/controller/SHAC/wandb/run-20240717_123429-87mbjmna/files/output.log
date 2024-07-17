@@ -1,0 +1,2659 @@
+Epoch: (0)
+Timestep: 2048
+Average actor loss: 1540.1478271484375
+Average critic loss: 1425708598.0
+Average episode reward: -49782.01727294922
+Epoch: (1)
+Timestep: 4096
+Average actor loss: 1926.901611328125
+Average critic loss: 3137601217.0
+Average episode reward: -62283.279693603516
+Epoch: (2)
+Timestep: 6144
+Average actor loss: 2394.62109375
+Average critic loss: 5321497502.0
+Average episode reward: -77401.50360107422
+Epoch: (3)
+Timestep: 8192
+Average actor loss: 2473.026123046875
+Average critic loss: 5575639080.5
+Average episode reward: -79935.81172180176
+Epoch: (4)
+Timestep: 10240
+Average actor loss: 2565.012939453125
+Average critic loss: 5880210536.4
+Average episode reward: -82909.10738525391
+Epoch: (5)
+Timestep: 12288
+Average actor loss: 2633.529296875
+Average critic loss: 6271368756.333333
+Average episode reward: -85123.74728393555
+Epoch: (6)
+Timestep: 14336
+Average actor loss: 2676.548095703125
+Average critic loss: 6338530161.428572
+Average episode reward: -86514.2210257394
+Epoch: (7)
+Timestep: 16384
+Average actor loss: 2707.195068359375
+Average critic loss: 6614223008.25
+Average episode reward: -87504.7843093872
+Epoch: (8)
+Timestep: 18432
+Average actor loss: 2742.148681640625
+Average critic loss: 6724361746.888889
+Average episode reward: -88634.55157470703
+Epoch: (9)
+Timestep: 20480
+Average actor loss: 2759.793701171875
+Average critic loss: 6803982785.8
+Average episode reward: -89204.83958129883
+Epoch: (10)
+Timestep: 22528
+Average actor loss: 2781.124755859375
+Average critic loss: 6901746903.454545
+Average episode reward: -89894.2720225941
+Epoch: (11)
+Timestep: 24576
+Average actor loss: 2795.44189453125
+Average critic loss: 6942057383.5
+Average episode reward: -90356.98558044434
+Epoch: (12)
+Timestep: 26624
+Average actor loss: 2808.712890625
+Average critic loss: 6974474076.461538
+Average episode reward: -90785.87515493539
+Epoch: (13)
+Timestep: 28672
+Average actor loss: 2820.107666015625
+Average critic loss: 7002421951.0
+Average episode reward: -91154.11755807059
+Epoch: (14)
+Timestep: 30720
+Average actor loss: 2830.555908203125
+Average critic loss: 7031091174.0
+Average episode reward: -91491.75649820964
+Epoch: (15)
+Timestep: 32768
+Average actor loss: 2838.9033203125
+Average critic loss: 7027781588.625
+Average episode reward: -91761.48831558228
+Epoch: (16)
+Timestep: 34816
+Average actor loss: 2846.783447265625
+Average critic loss: 7073380056.117647
+Average episode reward: -92016.10011560777
+Epoch: (17)
+Timestep: 36864
+Average actor loss: 2857.18798828125
+Average critic loss: 7109355502.333333
+Average episode reward: -92352.28397962783
+Epoch: (18)
+Timestep: 38912
+Average actor loss: 2862.135009765625
+Average critic loss: 7120583065.789474
+Average episode reward: -92512.07414486534
+Epoch: (19)
+Timestep: 40960
+Average actor loss: 2866.060546875
+Average critic loss: 7121901584.9
+Average episode reward: -92638.82278137207
+Epoch: (20)
+Timestep: 43008
+Average actor loss: 2936.017578125
+Average critic loss: 7405122552.6
+Average episode reward: -94899.8559387207
+Epoch: (21)
+Timestep: 45056
+Average actor loss: 2973.7744140625
+Average critic loss: 7597898815.2
+Average episode reward: -96120.03605957031
+Epoch: (22)
+Timestep: 47104
+Average actor loss: 2954.345458984375
+Average critic loss: 7441673768.8
+Average episode reward: -95491.74732666016
+Epoch: (23)
+Timestep: 49152
+Average actor loss: 2970.191162109375
+Average critic loss: 7549583752.0
+Average episode reward: -96003.64248046876
+Epoch: (24)
+Timestep: 51200
+Average actor loss: 2970.37744140625
+Average critic loss: 7524279074.8
+Average episode reward: -96009.3110961914
+Epoch: (25)
+Timestep: 53248
+Average actor loss: 2971.114501953125
+Average critic loss: 7523704554.8
+Average episode reward: -96032.77384033203
+Epoch: (26)
+Timestep: 55296
+Average actor loss: 2972.519287109375
+Average critic loss: 7538540014.0
+Average episode reward: -96077.78408203126
+Epoch: (27)
+Timestep: 57344
+Average actor loss: 2978.312255859375
+Average critic loss: 7475167859.6
+Average episode reward: -96264.59020996094
+Epoch: (28)
+Timestep: 59392
+Average actor loss: 2976.0390625
+Average critic loss: 7470240072.8
+Average episode reward: -96190.63581542969
+Epoch: (29)
+Timestep: 61440
+Average actor loss: 2977.509521484375
+Average critic loss: 7459891796.4
+Average episode reward: -96237.6158569336
+Epoch: (30)
+Timestep: 63488
+Average actor loss: 2977.936279296875
+Average critic loss: 7447102067.6
+Average episode reward: -96250.82745361328
+Epoch: (31)
+Timestep: 65536
+Average actor loss: 2918.10791015625
+Average critic loss: 7260180335.2
+Average episode reward: -94316.17276916504
+Epoch: (32)
+Timestep: 67584
+Average actor loss: 2885.2109375
+Average critic loss: 7132737499.8
+Average episode reward: -93252.07237854003
+Epoch: (33)
+Timestep: 69632
+Average actor loss: 2884.38330078125
+Average critic loss: 7025116355.2
+Average episode reward: -93224.54292907714
+Epoch: (34)
+Timestep: 71680
+Average actor loss: 2875.005615234375
+Average critic loss: 7032257152.0
+Average episode reward: -92920.62690124512
+Epoch: (35)
+Timestep: 73728
+Average actor loss: 2868.803466796875
+Average critic loss: 7014300101.2
+Average episode reward: -92719.28796081543
+Epoch: (36)
+Timestep: 75776
+Average actor loss: 2871.9384765625
+Average critic loss: 7008635059.2
+Average episode reward: -92819.69001159669
+Epoch: (37)
+Timestep: 77824
+Average actor loss: 2865.335693359375
+Average critic loss: 6975479589.6
+Average episode reward: -92605.25414733887
+Epoch: (38)
+Timestep: 79872
+Average actor loss: 2866.3017578125
+Average critic loss: 6960289111.2
+Average episode reward: -92635.38963317871
+Epoch: (39)
+Timestep: 81920
+Average actor loss: 2865.940185546875
+Average critic loss: 6940022991.6
+Average episode reward: -92622.5570526123
+Epoch: (40)
+Timestep: 83968
+Average actor loss: 2865.62890625
+Average critic loss: 6906513716.4
+Average episode reward: -92611.26893005372
+Epoch: (41)
+Timestep: 86016
+Average actor loss: 2865.34765625
+Average critic loss: 6860249438.8
+Average episode reward: -92600.82673034669
+Epoch: (42)
+Timestep: 88064
+Average actor loss: 2862.561279296875
+Average critic loss: 6834392419.6
+Average episode reward: -92509.35518493652
+Epoch: (43)
+Timestep: 90112
+Average actor loss: 2861.281005859375
+Average critic loss: 6763540144.0
+Average episode reward: -92466.47123718262
+Epoch: (44)
+Timestep: 92160
+Average actor loss: 2862.8447265625
+Average critic loss: 6748725407.6
+Average episode reward: -92515.4510345459
+Epoch: (45)
+Timestep: 94208
+Average actor loss: 2860.89501953125
+Average critic loss: 6649656477.6
+Average episode reward: -92450.74954528808
+Epoch: (46)
+Timestep: 96256
+Average actor loss: 2860.692138671875
+Average critic loss: 6637529647.6
+Average episode reward: -92442.40688171386
+Epoch: (47)
+Timestep: 98304
+Average actor loss: 2855.208251953125
+Average critic loss: 6615636408.8
+Average episode reward: -92263.25400085449
+Epoch: (48)
+Timestep: 100352
+Average actor loss: 2856.17578125
+Average critic loss: 6602356008.0
+Average episode reward: -92292.55353698731
+Epoch: (49)
+Timestep: 102400
+Average actor loss: 2854.543212890625
+Average critic loss: 6552797655.2
+Average episode reward: -92237.69965515137
+Epoch: (50)
+Timestep: 104448
+Average actor loss: 2858.973388671875
+Average critic loss: 6550276187.6
+Average episode reward: -92378.69684753419
+Epoch: (51)
+Timestep: 106496
+Average actor loss: 2917.96875
+Average critic loss: 6693953110.0
+Average episode reward: -94283.4981628418
+Epoch: (52)
+Timestep: 108544
+Average actor loss: 2952.31591796875
+Average critic loss: 6787576331.8
+Average episode reward: -95391.3500793457
+Epoch: (53)
+Timestep: 110592
+Average actor loss: 2952.411865234375
+Average critic loss: 6893758148.4
+Average episode reward: -95391.92628173828
+Epoch: (54)
+Timestep: 112640
+Average actor loss: 2961.570068359375
+Average critic loss: 6838375086.8
+Average episode reward: -95685.25231933594
+Epoch: (55)
+Timestep: 114688
+Average actor loss: 2972.965576171875
+Average critic loss: 6874712001.6
+Average episode reward: -96050.80020751953
+Epoch: (56)
+Timestep: 116736
+Average actor loss: 2966.599853515625
+Average critic loss: 6815008811.2
+Average episode reward: -95842.07746582032
+Epoch: (57)
+Timestep: 118784
+Average actor loss: 2974.63623046875
+Average critic loss: 6786002377.2
+Average episode reward: -96098.81478271485
+Epoch: (58)
+Timestep: 120832
+Average actor loss: 2968.966064453125
+Average critic loss: 6717671652.8
+Average episode reward: -95912.33094482422
+Epoch: (59)
+Timestep: 122880
+Average actor loss: 2971.646240234375
+Average critic loss: 6732068768.4
+Average episode reward: -95995.59661865234
+Epoch: (60)
+Timestep: 124928
+Average actor loss: 2975.859130859375
+Average critic loss: 6722569928.8
+Average episode reward: -96128.29818115235
+Epoch: (61)
+Timestep: 126976
+Average actor loss: 2967.505615234375
+Average critic loss: 6638251560.8
+Average episode reward: -95854.69348144531
+Epoch: (62)
+Timestep: 129024
+Average actor loss: 2925.650146484375
+Average critic loss: 6538552855.6
+Average episode reward: -94497.67919311524
+Epoch: (63)
+Timestep: 131072
+Average actor loss: 2879.843017578125
+Average critic loss: 6312084222.4
+Average episode reward: -93012.83143920898
+Epoch: (64)
+Timestep: 133120
+Average actor loss: 2861.272705078125
+Average critic loss: 6157001692.8
+Average episode reward: -92408.45802001953
+Epoch: (65)
+Timestep: 135168
+Average actor loss: 2867.43798828125
+Average critic loss: 6336853799.6
+Average episode reward: -92603.5296508789
+Epoch: (66)
+Timestep: 137216
+Average actor loss: 2858.63818359375
+Average critic loss: 6288248057.0
+Average episode reward: -92314.74049072266
+Epoch: (67)
+Timestep: 139264
+Average actor loss: 2870.572021484375
+Average critic loss: 6284807953.8
+Average episode reward: -92695.96616210937
+Epoch: (68)
+Timestep: 141312
+Average actor loss: 2861.7578125
+Average critic loss: 6187702854.6
+Average episode reward: -92406.40167236328
+Epoch: (69)
+Timestep: 143360
+Average actor loss: 2869.979736328125
+Average critic loss: 6200954659.8
+Average episode reward: -92667.29923095703
+Epoch: (70)
+Timestep: 145408
+Average actor loss: 2862.66455078125
+Average critic loss: 6108759179.8
+Average episode reward: -92425.88095703124
+Epoch: (71)
+Timestep: 147456
+Average actor loss: 2863.5478515625
+Average critic loss: 6053922387.0
+Average episode reward: -92449.24987792969
+Epoch: (72)
+Timestep: 149504
+Average actor loss: 2864.29443359375
+Average critic loss: 6014454296.2
+Average episode reward: -92468.04324951171
+Epoch: (73)
+Timestep: 151552
+Average actor loss: 2862.723388671875
+Average critic loss: 5957428719.4
+Average episode reward: -92411.732421875
+Epoch: (74)
+Timestep: 153600
+Average actor loss: 2863.3837890625
+Average critic loss: 5900854100.6
+Average episode reward: -92427.4273071289
+Epoch: (75)
+Timestep: 155648
+Average actor loss: 2856.529052734375
+Average critic loss: 5846128916.2
+Average episode reward: -92200.0101196289
+Epoch: (76)
+Timestep: 157696
+Average actor loss: 2865.824462890625
+Average critic loss: 5842976684.6
+Average episode reward: -92494.43885498047
+Epoch: (77)
+Timestep: 159744
+Average actor loss: 2860.504638671875
+Average critic loss: 5799756826.6
+Average episode reward: -92316.26049804688
+Epoch: (78)
+Timestep: 161792
+Average actor loss: 2864.272216796875
+Average critic loss: 5808512110.6
+Average episode reward: -92431.63072509765
+Epoch: (79)
+Timestep: 163840
+Average actor loss: 2865.70166015625
+Average critic loss: 5743911753.8
+Average episode reward: -92471.27633056641
+Epoch: (80)
+Timestep: 165888
+Average actor loss: 2863.783447265625
+Average critic loss: 5727575575.4
+Average episode reward: -92402.49603271484
+Epoch: (81)
+Timestep: 167936
+Average actor loss: 2869.292724609375
+Average critic loss: 5686711066.8
+Average episode reward: -92573.66270751953
+Epoch: (82)
+Timestep: 169984
+Average actor loss: 2915.8984375
+Average critic loss: 5781568864.8
+Average episode reward: -94073.28893432618
+Epoch: (83)
+Timestep: 172032
+Average actor loss: 2960.359619140625
+Average critic loss: 5907715061.6
+Average episode reward: -95503.37357788086
+Epoch: (84)
+Timestep: 174080
+Average actor loss: 2978.57275390625
+Average critic loss: 5988618741.0
+Average episode reward: -96084.62930908203
+Epoch: (85)
+Timestep: 176128
+Average actor loss: 2974.71337890625
+Average critic loss: 5787684199.0
+Average episode reward: -95952.19705810546
+Epoch: (86)
+Timestep: 178176
+Average actor loss: 2981.894287109375
+Average critic loss: 5748572648.0
+Average episode reward: -96176.35651855469
+Epoch: (87)
+Timestep: 180224
+Average actor loss: 2977.037841796875
+Average critic loss: 5732141384.8
+Average episode reward: -96011.27757568359
+Epoch: (88)
+Timestep: 182272
+Average actor loss: 2982.720703125
+Average critic loss: 5717293139.0
+Average episode reward: -96186.66047363282
+Epoch: (89)
+Timestep: 184320
+Average actor loss: 2977.429443359375
+Average critic loss: 5669262612.2
+Average episode reward: -96007.14749755859
+Epoch: (90)
+Timestep: 186368
+Average actor loss: 2978.31005859375
+Average critic loss: 5616526307.4
+Average episode reward: -96026.81384277344
+Epoch: (91)
+Timestep: 188416
+Average actor loss: 2980.15283203125
+Average critic loss: 5629930667.4
+Average episode reward: -96077.42601318359
+Epoch: (92)
+Timestep: 190464
+Average actor loss: 2979.999755859375
+Average critic loss: 5573594084.8
+Average episode reward: -96063.26361083984
+Epoch: (93)
+Timestep: 192512
+Average actor loss: 2954.177734375
+Average critic loss: 5495425274.0
+Average episode reward: -95219.06885375976
+Epoch: (94)
+Timestep: 194560
+Average actor loss: 2896.447021484375
+Average critic loss: 5278108360.6
+Average episode reward: -93343.0684753418
+Epoch: (95)
+Timestep: 196608
+Average actor loss: 2867.383544921875
+Average critic loss: 5148988576.0
+Average episode reward: -92393.77876586914
+Epoch: (96)
+Timestep: 198656
+Average actor loss: 2874.4296875
+Average critic loss: 5146670253.4
+Average episode reward: -92611.51736450195
+Epoch: (97)
+Timestep: 200704
+Average actor loss: 2864.93603515625
+Average critic loss: 5104944061.8
+Average episode reward: -92294.37266235352
+Epoch: (98)
+Timestep: 202752
+Average actor loss: 2870.564208984375
+Average critic loss: 5033916529.6
+Average episode reward: -92465.8237487793
+Epoch: (99)
+Timestep: 204800
+Average actor loss: 2866.583251953125
+Average critic loss: 5018066673.6
+Average episode reward: -92326.43920288087
+Epoch: (100)
+Timestep: 206848
+Average actor loss: 2869.167236328125
+Average critic loss: 4966466765.6
+Average episode reward: -92399.04622192383
+Epoch: (101)
+Timestep: 208896
+Average actor loss: 2862.7529296875
+Average critic loss: 4929495144.4
+Average episode reward: -92180.51229858398
+Epoch: (102)
+Timestep: 210944
+Average actor loss: 2863.492919921875
+Average critic loss: 4877077050.8
+Average episode reward: -92193.06914672852
+Epoch: (103)
+Timestep: 212992
+Average actor loss: 2867.814208984375
+Average critic loss: 4846422134.8
+Average episode reward: -92321.1488708496
+Epoch: (104)
+Timestep: 215040
+Average actor loss: 2865.4140625
+Average critic loss: 4821465985.0
+Average episode reward: -92231.64888305664
+Epoch: (105)
+Timestep: 217088
+Average actor loss: 2866.994140625
+Average critic loss: 4758337327.8
+Average episode reward: -92270.56527709961
+Epoch: (106)
+Timestep: 219136
+Average actor loss: 2869.077392578125
+Average critic loss: 4744413183.4
+Average episode reward: -92325.54010620117
+Epoch: (107)
+Timestep: 221184
+Average actor loss: 2864.71875
+Average critic loss: 4637584393.8
+Average episode reward: -92171.99071655274
+Epoch: (108)
+Timestep: 223232
+Average actor loss: 2866.15283203125
+Average critic loss: 4575436263.0
+Average episode reward: -92205.44934692382
+Epoch: (109)
+Timestep: 225280
+Average actor loss: 2864.216552734375
+Average critic loss: 4540671931.0
+Average episode reward: -92129.6967224121
+Epoch: (110)
+Timestep: 227328
+Average actor loss: 2870.6923828125
+Average critic loss: 4524019803.6
+Average episode reward: -92325.66481323242
+Epoch: (111)
+Timestep: 229376
+Average actor loss: 2863.899169921875
+Average critic loss: 4444418967.2
+Average episode reward: -92092.45590209961
+Epoch: (112)
+Timestep: 231424
+Average actor loss: 2865.07177734375
+Average critic loss: 4439259545.6
+Average episode reward: -92116.45879516602
+Epoch: (113)
+Timestep: 233472
+Average actor loss: 2893.711181640625
+Average critic loss: 4431340896.8
+Average episode reward: -93028.15809326172
+Epoch: (114)
+Timestep: 235520
+Average actor loss: 2950.66259765625
+Average critic loss: 4574327747.0
+Average episode reward: -94854.91105957031
+Epoch: (115)
+Timestep: 237568
+Average actor loss: 2982.738037109375
+Average critic loss: 4585388914.4
+Average episode reward: -95877.00153808594
+Epoch: (116)
+Timestep: 239616
+Average actor loss: 2969.699951171875
+Average critic loss: 4472938880.4
+Average episode reward: -95440.57432861328
+Epoch: (117)
+Timestep: 241664
+Average actor loss: 2981.43505859375
+Average critic loss: 4444603839.0
+Average episode reward: -95804.59855957031
+Epoch: (118)
+Timestep: 243712
+Average actor loss: 2977.904296875
+Average critic loss: 4432504000.8
+Average episode reward: -95674.93994140625
+Epoch: (119)
+Timestep: 245760
+Average actor loss: 2981.739990234375
+Average critic loss: 4392614122.6
+Average episode reward: -95783.10874023437
+Epoch: (120)
+Timestep: 247808
+Average actor loss: 2983.258056640625
+Average critic loss: 4370953955.4
+Average episode reward: -95816.0767211914
+Epoch: (121)
+Timestep: 249856
+Average actor loss: 2986.011474609375
+Average critic loss: 4314881110.8
+Average episode reward: -95888.68459472657
+Epoch: (122)
+Timestep: 251904
+Average actor loss: 2989.49853515625
+Average critic loss: 4292203084.8
+Average episode reward: -95984.67996826171
+Epoch: (123)
+Timestep: 253952
+Average actor loss: 2987.112548828125
+Average critic loss: 4261732499.6
+Average episode reward: -95890.51586914062
+Epoch: (124)
+Timestep: 256000
+Average actor loss: 2992.464599609375
+Average critic loss: 4246181133.2
+Average episode reward: -96062.98294677734
+Epoch: (125)
+Timestep: 258048
+Average actor loss: 2919.46240234375
+Average critic loss: 4029039781.16875
+Average episode reward: -93685.41050109864
+Epoch: (126)
+Timestep: 260096
+Average actor loss: 2892.932861328125
+Average critic loss: 3938250878.06875
+Average episode reward: -92809.93124084473
+Epoch: (127)
+Timestep: 262144
+Average actor loss: 2911.516357421875
+Average critic loss: 3976174082.06875
+Average episode reward: -93392.4227935791
+Epoch: (128)
+Timestep: 264192
+Average actor loss: 2900.626708984375
+Average critic loss: 3917077068.26875
+Average episode reward: -93021.94438781738
+Epoch: (129)
+Timestep: 266240
+Average actor loss: 2903.023193359375
+Average critic loss: 3821780530.66875
+Average episode reward: -93080.64342346191
+Epoch: (130)
+Timestep: 268288
+Average actor loss: 2899.68408203125
+Average critic loss: 3818667438.06875
+Average episode reward: -92953.64560852051
+Epoch: (131)
+Timestep: 270336
+Average actor loss: 2909.06396484375
+Average critic loss: 3779502373.86875
+Average episode reward: -93237.4159576416
+Epoch: (132)
+Timestep: 272384
+Average actor loss: 2903.934326171875
+Average critic loss: 3742298731.26875
+Average episode reward: -93051.93605041504
+Epoch: (133)
+Timestep: 274432
+Average actor loss: 2908.672119140625
+Average critic loss: 3688639026.46875
+Average episode reward: -93185.11590881347
+Epoch: (134)
+Timestep: 276480
+Average actor loss: 2907.825927734375
+Average critic loss: 3677568043.06875
+Average episode reward: -93137.46656799316
+Epoch: (135)
+Timestep: 278528
+Average actor loss: 2911.760986328125
+Average critic loss: 3666385472.26875
+Average episode reward: -93244.029788208
+Epoch: (136)
+Timestep: 280576
+Average actor loss: 2914.419677734375
+Average critic loss: 3613145088.66875
+Average episode reward: -93309.04264221192
+Epoch: (137)
+Timestep: 282624
+Average actor loss: 2916.61474609375
+Average critic loss: 3587455044.06875
+Average episode reward: -93358.75046691895
+Epoch: (138)
+Timestep: 284672
+Average actor loss: 2922.68701171875
+Average critic loss: 3535632776.06875
+Average episode reward: -93533.46341857911
+Epoch: (139)
+Timestep: 286720
+Average actor loss: 2918.239013671875
+Average critic loss: 3472593909.66875
+Average episode reward: -93367.74083557128
+Epoch: (140)
+Timestep: 288768
+Average actor loss: 2921.923095703125
+Average critic loss: 3445676090.86875
+Average episode reward: -93464.57280578613
+Epoch: (141)
+Timestep: 290816
+Average actor loss: 2924.68603515625
+Average critic loss: 3432913467.16875
+Average episode reward: -93531.31961975098
+Epoch: (142)
+Timestep: 292864
+Average actor loss: 2924.6845703125
+Average critic loss: 3380033299.36875
+Average episode reward: -93508.38821105957
+Epoch: (143)
+Timestep: 294912
+Average actor loss: 2923.29345703125
+Average critic loss: 3320089937.66875
+Average episode reward: -93440.18961486817
+Epoch: (144)
+Timestep: 296960
+Average actor loss: 2925.1279296875
+Average critic loss: 3290634311.06875
+Average episode reward: -93459.17984924317
+Epoch: (145)
+Timestep: 299008
+Average actor loss: 2997.162841796875
+Average critic loss: 3441720464.7
+Average episode reward: -95763.99001464844
+Epoch: (146)
+Timestep: 301056
+Average actor loss: 3027.141357421875
+Average critic loss: 3449432572.6
+Average episode reward: -96708.8312133789
+Epoch: (147)
+Timestep: 303104
+Average actor loss: 3009.529052734375
+Average critic loss: 3332513511.6
+Average episode reward: -96114.95767822265
+Epoch: (148)
+Timestep: 305152
+Average actor loss: 3020.030029296875
+Average critic loss: 3332973285.8
+Average episode reward: -96429.4054321289
+Epoch: (149)
+Timestep: 307200
+Average actor loss: 3022.7548828125
+Average critic loss: 3331852345.3
+Average episode reward: -96492.1214477539
+Epoch: (150)
+Timestep: 309248
+Average actor loss: 3021.811279296875
+Average critic loss: 3261011948.3
+Average episode reward: -96435.92661132812
+Epoch: (151)
+Timestep: 311296
+Average actor loss: 3022.60986328125
+Average critic loss: 3235473080.9
+Average episode reward: -96435.75085449219
+Epoch: (152)
+Timestep: 313344
+Average actor loss: 3026.461669921875
+Average critic loss: 3172555507.4
+Average episode reward: -96533.84866943359
+Epoch: (153)
+Timestep: 315392
+Average actor loss: 3021.32763671875
+Average critic loss: 3124464384.9
+Average episode reward: -96341.15490722656
+Epoch: (154)
+Timestep: 317440
+Average actor loss: 3025.576171875
+Average critic loss: 3084364462.3
+Average episode reward: -96451.35874023437
+Epoch: (155)
+Timestep: 319488
+Average actor loss: 3026.179443359375
+Average critic loss: 3034138771.9
+Average episode reward: -96443.38576660157
+Epoch: (156)
+Timestep: 321536
+Average actor loss: 2965.443115234375
+Average critic loss: 2913432969.75
+Average episode reward: -94452.1429260254
+Epoch: (157)
+Timestep: 323584
+Average actor loss: 2938.648681640625
+Average critic loss: 2810418398.95
+Average episode reward: -93557.77004394532
+Epoch: (158)
+Timestep: 325632
+Average actor loss: 2938.721435546875
+Average critic loss: 2745410046.2
+Average episode reward: -93531.50877075196
+Epoch: (159)
+Timestep: 327680
+Average actor loss: 2932.060546875
+Average critic loss: 2700282594.15
+Average episode reward: -93287.29379272461
+Epoch: (160)
+Timestep: 329728
+Average actor loss: 2921.515625
+Average critic loss: 2604192521.65
+Average episode reward: -92917.14590454102
+Epoch: (161)
+Timestep: 331776
+Average actor loss: 2928.843505859375
+Average critic loss: 2609663879.65
+Average episode reward: -93124.3174987793
+Epoch: (162)
+Timestep: 333824
+Average actor loss: 2922.508544921875
+Average critic loss: 2543761132.55
+Average episode reward: -92889.5198059082
+Epoch: (163)
+Timestep: 335872
+Average actor loss: 2925.65283203125
+Average critic loss: 2520413493.65
+Average episode reward: -92960.77977905274
+Epoch: (164)
+Timestep: 337920
+Average actor loss: 2921.85546875
+Average critic loss: 2448651674.95
+Average episode reward: -92807.31638793946
+Epoch: (165)
+Timestep: 339968
+Average actor loss: 2923.967529296875
+Average critic loss: 2408303127.35
+Average episode reward: -92844.46420288086
+Epoch: (166)
+Timestep: 342016
+Average actor loss: 2923.779296875
+Average critic loss: 2359655665.45
+Average episode reward: -92806.85763549805
+Epoch: (167)
+Timestep: 344064
+Average actor loss: 2920.686279296875
+Average critic loss: 2323954947.35
+Average episode reward: -92675.02744750977
+Epoch: (168)
+Timestep: 346112
+Average actor loss: 2922.739013671875
+Average critic loss: 2291107058.55
+Average episode reward: -92709.16828002929
+Epoch: (169)
+Timestep: 348160
+Average actor loss: 2921.975830078125
+Average critic loss: 2244869707.65
+Average episode reward: -92651.89215698242
+Epoch: (170)
+Timestep: 350208
+Average actor loss: 2923.29052734375
+Average critic loss: 2198386119.35
+Average episode reward: -92661.41389770508
+Epoch: (171)
+Timestep: 352256
+Average actor loss: 2922.012451171875
+Average critic loss: 2158069527.75
+Average episode reward: -92586.73334350585
+Epoch: (172)
+Timestep: 354304
+Average actor loss: 2922.14501953125
+Average critic loss: 2109368539.55
+Average episode reward: -92557.27523803711
+Epoch: (173)
+Timestep: 356352
+Average actor loss: 2926.263427734375
+Average critic loss: 2101185828.35
+Average episode reward: -92656.25995483398
+Epoch: (174)
+Timestep: 358400
+Average actor loss: 2928.5029296875
+Average critic loss: 2047224354.75
+Average episode reward: -92694.13064575195
+Epoch: (175)
+Timestep: 360448
+Average actor loss: 2926.732666015625
+Average critic loss: 1994334188.75
+Average episode reward: -92601.99649047852
+Epoch: (176)
+Timestep: 362496
+Average actor loss: 2990.968017578125
+Average critic loss: 2060588523.7
+Average episode reward: -94643.21251220703
+Epoch: (177)
+Timestep: 364544
+Average actor loss: 3014.268798828125
+Average critic loss: 2070677716.3
+Average episode reward: -95360.75521850586
+Epoch: (178)
+Timestep: 366592
+Average actor loss: 3012.648681640625
+Average critic loss: 2072701940.85
+Average episode reward: -95272.33928222656
+Epoch: (179)
+Timestep: 368640
+Average actor loss: 3025.086669921875
+Average critic loss: 2030418756.75
+Average episode reward: -95637.90219726562
+Epoch: (180)
+Timestep: 370688
+Average actor loss: 3031.982421875
+Average critic loss: 2005801566.45
+Average episode reward: -95823.90627441407
+Epoch: (181)
+Timestep: 372736
+Average actor loss: 3030.86474609375
+Average critic loss: 1925317801.3
+Average episode reward: -95750.47623291015
+Epoch: (182)
+Timestep: 374784
+Average actor loss: 3037.93701171875
+Average critic loss: 1919223275.9
+Average episode reward: -95941.36287841797
+Epoch: (183)
+Timestep: 376832
+Average actor loss: 3037.447509765625
+Average critic loss: 1872566378.7
+Average episode reward: -95887.42646484375
+Epoch: (184)
+Timestep: 378880
+Average actor loss: 3040.890380859375
+Average critic loss: 1866396465.7
+Average episode reward: -95960.16995849609
+Epoch: (185)
+Timestep: 380928
+Average actor loss: 3041.932373046875
+Average critic loss: 1815586138.1
+Average episode reward: -95954.93098144532
+Epoch: (186)
+Timestep: 382976
+Average actor loss: 3042.452880859375
+Average critic loss: 1791216749.55
+Average episode reward: -95932.42501220704
+Epoch: (187)
+Timestep: 385024
+Average actor loss: 3002.440185546875
+Average critic loss: 1721218899.475
+Average episode reward: -94599.23367614746
+Epoch: (188)
+Timestep: 387072
+Average actor loss: 2962.411865234375
+Average critic loss: 1638556906.99375
+Average episode reward: -93265.13999938965
+Epoch: (189)
+Timestep: 389120
+Average actor loss: 2952.1298828125
+Average critic loss: 1560932965.98125
+Average episode reward: -92892.23030090332
+Epoch: (190)
+Timestep: 391168
+Average actor loss: 2954.61767578125
+Average critic loss: 1592503919.18125
+Average episode reward: -92931.68042297363
+Epoch: (191)
+Timestep: 393216
+Average actor loss: 2947.98193359375
+Average critic loss: 1567077447.03125
+Average episode reward: -92675.8474029541
+Epoch: (192)
+Timestep: 395264
+Average actor loss: 2955.12890625
+Average critic loss: 1554374425.73125
+Average episode reward: -92865.10503234863
+Epoch: (193)
+Timestep: 397312
+Average actor loss: 2948.8515625
+Average critic loss: 1503503310.08125
+Average episode reward: -92620.0718536377
+Epoch: (194)
+Timestep: 399360
+Average actor loss: 2952.647705078125
+Average critic loss: 1487743542.78125
+Average episode reward: -92700.25220031738
+Epoch: (195)
+Timestep: 401408
+Average actor loss: 2947.6689453125
+Average critic loss: 1466976242.38125
+Average episode reward: -92496.3772857666
+Epoch: (196)
+Timestep: 403456
+Average actor loss: 2952.064208984375
+Average critic loss: 1443217121.08125
+Average episode reward: -92595.10475158691
+Epoch: (197)
+Timestep: 405504
+Average actor loss: 2953.341552734375
+Average critic loss: 1402711826.73125
+Average episode reward: -92592.63714904785
+Epoch: (198)
+Timestep: 407552
+Average actor loss: 2956.716796875
+Average critic loss: 1384647950.58125
+Average episode reward: -92657.58576965332
+Epoch: (199)
+Timestep: 409600
+Average actor loss: 2960.3046875
+Average critic loss: 1354449302.48125
+Average episode reward: -92728.9866607666
+Epoch: (200)
+Timestep: 411648
+Average actor loss: 2956.140380859375
+Average critic loss: 1333875767.08125
+Average episode reward: -92549.42062072754
+Epoch: (201)
+Timestep: 413696
+Average actor loss: 2958.497802734375
+Average critic loss: 1316335318.93125
+Average episode reward: -92580.26213684081
+Epoch: (202)
+Timestep: 415744
+Average actor loss: 2957.17041015625
+Average critic loss: 1275855369.63125
+Average episode reward: -92491.58636779785
+Epoch: (203)
+Timestep: 417792
+Average actor loss: 2961.307373046875
+Average critic loss: 1271476700.90625
+Average episode reward: -92579.12837219238
+Epoch: (204)
+Timestep: 419840
+Average actor loss: 2964.795654296875
+Average critic loss: 1239825656.00625
+Average episode reward: -92645.26665344238
+Epoch: (205)
+Timestep: 421888
+Average actor loss: 2964.220703125
+Average critic loss: 1215264562.40625
+Average episode reward: -92579.65493469239
+Epoch: (206)
+Timestep: 423936
+Average actor loss: 2968.856201171875
+Average critic loss: 1196097209.45625
+Average episode reward: -92682.03163146973
+Epoch: (207)
+Timestep: 425984
+Average actor loss: 3015.445068359375
+Average critic loss: 1222837095.28125
+Average episode reward: -94140.17572631835
+Epoch: (208)
+Timestep: 428032
+Average actor loss: 3059.643310546875
+Average critic loss: 1248086051.0625
+Average episode reward: -95520.61410522461
+Epoch: (209)
+Timestep: 430080
+Average actor loss: 3074.475341796875
+Average critic loss: 1283093467.725
+Average episode reward: -95951.34908447266
+Epoch: (210)
+Timestep: 432128
+Average actor loss: 3075.39892578125
+Average critic loss: 1204741250.6
+Average episode reward: -95932.0492553711
+Epoch: (211)
+Timestep: 434176
+Average actor loss: 3085.716064453125
+Average critic loss: 1171373183.15
+Average episode reward: -96215.93634033203
+Epoch: (212)
+Timestep: 436224
+Average actor loss: 3082.869384765625
+Average critic loss: 1149090551.15
+Average episode reward: -96073.89510498047
+Epoch: (213)
+Timestep: 438272
+Average actor loss: 3089.112548828125
+Average critic loss: 1116248388.575
+Average episode reward: -96225.21209716797
+Epoch: (214)
+Timestep: 440320
+Average actor loss: 3088.03173828125
+Average critic loss: 1096542024.05
+Average episode reward: -96139.37061767578
+Epoch: (215)
+Timestep: 442368
+Average actor loss: 3097.996826171875
+Average critic loss: 1068689520.05
+Average episode reward: -96410.13857421876
+Epoch: (216)
+Timestep: 444416
+Average actor loss: 3093.805419921875
+Average critic loss: 1033133509.975
+Average episode reward: -96222.86412353515
+Epoch: (217)
+Timestep: 446464
+Average actor loss: 3102.640380859375
+Average critic loss: 1015714182.15
+Average episode reward: -96456.2135131836
+Epoch: (218)
+Timestep: 448512
+Average actor loss: 3073.1611328125
+Average critic loss: 963841415.175
+Average episode reward: -95450.71818847656
+Epoch: (219)
+Timestep: 450560
+Average actor loss: 3019.71875
+Average critic loss: 921116433.7078125
+Average episode reward: -93670.15291748047
+Epoch: (220)
+Timestep: 452608
+Average actor loss: 2998.015869140625
+Average critic loss: 904918245.8703125
+Average episode reward: -92915.15453491212
+Epoch: (221)
+Timestep: 454656
+Average actor loss: 3011.865966796875
+Average critic loss: 946893478.5703125
+Average episode reward: -93308.96747436523
+Epoch: (222)
+Timestep: 456704
+Average actor loss: 3004.0283203125
+Average critic loss: 915585085.0828125
+Average episode reward: -93001.34749145508
+Epoch: (223)
+Timestep: 458752
+Average actor loss: 3009.8369140625
+Average critic loss: 903347604.1328125
+Average episode reward: -93134.41426391601
+Epoch: (224)
+Timestep: 460800
+Average actor loss: 3004.886962890625
+Average critic loss: 873376454.9078125
+Average episode reward: -92919.33225708008
+Epoch: (225)
+Timestep: 462848
+Average actor loss: 3008.9619140625
+Average critic loss: 853600508.9078125
+Average episode reward: -92995.54486694335
+Epoch: (226)
+Timestep: 464896
+Average actor loss: 3000.91064453125
+Average critic loss: 815844587.1078125
+Average episode reward: -92679.3991394043
+Epoch: (227)
+Timestep: 466944
+Average actor loss: 3007.604248046875
+Average critic loss: 790903978.6078125
+Average episode reward: -92839.45501098633
+Epoch: (228)
+Timestep: 468992
+Average actor loss: 3007.7919921875
+Average critic loss: 775995771.9828125
+Average episode reward: -92788.81146850585
+Epoch: (229)
+Timestep: 471040
+Average actor loss: 3007.257568359375
+Average critic loss: 740681662.0578125
+Average episode reward: -92714.43685913086
+Epoch: (230)
+Timestep: 473088
+Average actor loss: 3009.041748046875
+Average critic loss: 716063475.8828125
+Average episode reward: -92714.6065246582
+Epoch: (231)
+Timestep: 475136
+Average actor loss: 3007.471923828125
+Average critic loss: 700651017.1078125
+Average episode reward: -92605.96022338867
+Epoch: (232)
+Timestep: 477184
+Average actor loss: 3010.112060546875
+Average critic loss: 678592592.7828125
+Average episode reward: -92633.01141967773
+Epoch: (233)
+Timestep: 479232
+Average actor loss: 3015.033447265625
+Average critic loss: 670654300.0390625
+Average episode reward: -92733.40413208008
+Epoch: (234)
+Timestep: 481280
+Average actor loss: 3010.41162109375
+Average critic loss: 645319554.9015625
+Average episode reward: -92524.91914672851
+Epoch: (235)
+Timestep: 483328
+Average actor loss: 3013.444580078125
+Average critic loss: 639121196.1890625
+Average episode reward: -92563.47291870117
+Epoch: (236)
+Timestep: 485376
+Average actor loss: 3015.94775390625
+Average critic loss: 628620320.0515625
+Average episode reward: -92584.53141479492
+Epoch: (237)
+Timestep: 487424
+Average actor loss: 3014.677978515625
+Average critic loss: 616253479.4515625
+Average episode reward: -92483.2348083496
+Epoch: (238)
+Timestep: 489472
+Average actor loss: 3047.838134765625
+Average critic loss: 619427791.4390625
+Average episode reward: -93494.45040893555
+Epoch: (239)
+Timestep: 491520
+Average actor loss: 3100.2587890625
+Average critic loss: 629657238.5375
+Average episode reward: -95127.87389526368
+Epoch: (240)
+Timestep: 493568
+Average actor loss: 3132.51904296875
+Average critic loss: 613199302.725
+Average episode reward: -96109.1763671875
+Epoch: (241)
+Timestep: 495616
+Average actor loss: 3117.958984375
+Average critic loss: 522917843.6875
+Average episode reward: -95576.67503662109
+Epoch: (242)
+Timestep: 497664
+Average actor loss: 3132.06982421875
+Average critic loss: 523223094.5625
+Average episode reward: -95970.48575439453
+Epoch: (243)
+Timestep: 499712
+Average actor loss: 3125.76806640625
+Average critic loss: 494195134.71875
+Average episode reward: -95704.08533935547
+Epoch: (244)
+Timestep: 501760
+Average actor loss: 3132.93359375
+Average critic loss: 482496760.9375
+Average episode reward: -95872.59035644532
+Epoch: (245)
+Timestep: 503808
+Average actor loss: 3134.458984375
+Average critic loss: 473894591.40625
+Average episode reward: -95858.38923339844
+Epoch: (246)
+Timestep: 505856
+Average actor loss: 3145.198486328125
+Average critic loss: 471527797.721875
+Average episode reward: -96141.62174072265
+Epoch: (247)
+Timestep: 507904
+Average actor loss: 3141.364013671875
+Average critic loss: 448855942.121875
+Average episode reward: -95953.36112060546
+Epoch: (248)
+Timestep: 509952
+Average actor loss: 3149.888427734375
+Average critic loss: 445365254.434375
+Average episode reward: -96164.21135253906
+Epoch: (249)
+Timestep: 512000
+Average actor loss: 3151.563232421875
+Average critic loss: 434602999.990625
+Average episode reward: -96199.78292236329
+Epoch: (250)
+Timestep: 514048
+Average actor loss: 3080.750732421875
+Average critic loss: 438908992.653125
+Average episode reward: -93845.72182312011
+Epoch: (251)
+Timestep: 516096
+Average actor loss: 3054.246337890625
+Average critic loss: 438733376.275
+Average episode reward: -92923.24820861817
+Epoch: (252)
+Timestep: 518144
+Average actor loss: 3065.740966796875
+Average critic loss: 498285828.2625
+Average episode reward: -93228.73102111816
+Epoch: (253)
+Timestep: 520192
+Average actor loss: 3055.94140625
+Average critic loss: 495030918.715625
+Average episode reward: -92845.55338439942
+Epoch: (254)
+Timestep: 522240
+Average actor loss: 3065.5
+Average critic loss: 486216928.465625
+Average episode reward: -93087.80969543457
+Epoch: (255)
+Timestep: 524288
+Average actor loss: 3061.023193359375
+Average critic loss: 476369300.534375
+Average episode reward: -92876.07833557129
+Epoch: (256)
+Timestep: 526336
+Average actor loss: 3063.282958984375
+Average critic loss: 456100584.21875
+Average episode reward: -92881.80513000488
+Epoch: (257)
+Timestep: 528384
+Average actor loss: 3063.156005859375
+Average critic loss: 451878271.94375
+Average episode reward: -92810.11041564941
+Epoch: (258)
+Timestep: 530432
+Average actor loss: 3065.39208984375
+Average critic loss: 440105869.24375
+Average episode reward: -92814.45863342285
+Epoch: (259)
+Timestep: 532480
+Average actor loss: 3065.008544921875
+Average critic loss: 433298430.0875
+Average episode reward: -92733.9749420166
+Epoch: (260)
+Timestep: 534528
+Average actor loss: 3069.345458984375
+Average critic loss: 430352611.125
+Average episode reward: -92805.72125549316
+Epoch: (261)
+Timestep: 536576
+Average actor loss: 3070.0029296875
+Average critic loss: 420195693.778125
+Average episode reward: -92758.19433898925
+Epoch: (262)
+Timestep: 538624
+Average actor loss: 3070.749755859375
+Average critic loss: 404229199.534375
+Average episode reward: -92713.3417388916
+Epoch: (263)
+Timestep: 540672
+Average actor loss: 3075.465576171875
+Average critic loss: 400048455.615625
+Average episode reward: -92796.44449768067
+Epoch: (264)
+Timestep: 542720
+Average actor loss: 3079.459228515625
+Average critic loss: 390585154.8625
+Average episode reward: -92855.9846710205
+Epoch: (265)
+Timestep: 544768
+Average actor loss: 3076.902099609375
+Average critic loss: 381059053.784375
+Average episode reward: -92703.58443908692
+Epoch: (266)
+Timestep: 546816
+Average actor loss: 3079.025390625
+Average critic loss: 371394959.98125
+Average episode reward: -92702.16234436035
+Epoch: (267)
+Timestep: 548864
+Average actor loss: 3084.997314453125
+Average critic loss: 377952190.425
+Average episode reward: -92825.08675842285
+Epoch: (268)
+Timestep: 550912
+Average actor loss: 3084.10498046875
+Average critic loss: 369774641.934375
+Average episode reward: -92725.68088684083
+Epoch: (269)
+Timestep: 552960
+Average actor loss: 3086.882568359375
+Average critic loss: 365411037.00625
+Average episode reward: -92698.24608459472
+Epoch: (270)
+Timestep: 555008
+Average actor loss: 3159.80908203125
+Average critic loss: 344789610.76875
+Average episode reward: -94984.24270629883
+Epoch: (271)
+Timestep: 557056
+Average actor loss: 3191.7392578125
+Average critic loss: 326808858.871875
+Average episode reward: -95945.10056152343
+Epoch: (272)
+Timestep: 559104
+Average actor loss: 3186.249755859375
+Average critic loss: 248016050.534375
+Average episode reward: -95696.14909667968
+Epoch: (273)
+Timestep: 561152
+Average actor loss: 3195.35888671875
+Average critic loss: 234992745.5
+Average episode reward: -95918.65971679687
+Epoch: (274)
+Timestep: 563200
+Average actor loss: 3197.415283203125
+Average critic loss: 232753272.228125
+Average episode reward: -95913.17485351562
+Epoch: (275)
+Timestep: 565248
+Average actor loss: 3200.800048828125
+Average critic loss: 222480626.821875
+Average episode reward: -95950.29670410157
+Epoch: (276)
+Timestep: 567296
+Average actor loss: 3204.523193359375
+Average critic loss: 224667896.98125
+Average episode reward: -95998.05555419922
+Epoch: (277)
+Timestep: 569344
+Average actor loss: 3206.846435546875
+Average critic loss: 217613285.178125
+Average episode reward: -96000.44833984374
+Epoch: (278)
+Timestep: 571392
+Average actor loss: 3205.1015625
+Average critic loss: 206108561.0144531
+Average episode reward: -95871.04594726562
+Epoch: (279)
+Timestep: 573440
+Average actor loss: 3214.31689453125
+Average critic loss: 210887621.7332031
+Average episode reward: -96095.6882080078
+Epoch: (280)
+Timestep: 575488
+Average actor loss: 3213.531982421875
+Average critic loss: 197255746.20507812
+Average episode reward: -95996.97923583984
+Epoch: (281)
+Timestep: 577536
+Average actor loss: 3159.47021484375
+Average critic loss: 216303276.07070312
+Average episode reward: -94178.46564636231
+Epoch: (282)
+Timestep: 579584
+Average actor loss: 3129.286865234375
+Average critic loss: 218147439.23789063
+Average episode reward: -93129.64745788575
+Epoch: (283)
+Timestep: 581632
+Average actor loss: 3138.01611328125
+Average critic loss: 223240879.85976562
+Average episode reward: -93337.66572570801
+Epoch: (284)
+Timestep: 583680
+Average actor loss: 3126.514404296875
+Average critic loss: 230251889.72382814
+Average episode reward: -92891.4542388916
+Epoch: (285)
+Timestep: 585728
+Average actor loss: 3126.181396484375
+Average critic loss: 233733519.58320314
+Average episode reward: -92805.7483795166
+Epoch: (286)
+Timestep: 587776
+Average actor loss: 3131.240966796875
+Average critic loss: 252330711.3582031
+Average episode reward: -92894.09195861817
+Epoch: (287)
+Timestep: 589824
+Average actor loss: 3126.098388671875
+Average critic loss: 246833720.03320312
+Average episode reward: -92652.06775207519
+Epoch: (288)
+Timestep: 591872
+Average actor loss: 3126.5146484375
+Average critic loss: 255245506.34882814
+Average episode reward: -92589.85138244629
+Epoch: (289)
+Timestep: 593920
+Average actor loss: 3133.82421875
+Average critic loss: 259372233.62070313
+Average episode reward: -92750.06438293456
+Epoch: (290)
+Timestep: 595968
+Average actor loss: 3137.27734375
+Average critic loss: 271656728.7378906
+Average episode reward: -92785.19078674316
+Epoch: (291)
+Timestep: 598016
+Average actor loss: 3142.947998046875
+Average critic loss: 275276123.7675781
+Average episode reward: -92891.62755432128
+Epoch: (292)
+Timestep: 600064
+Average actor loss: 3141.410888671875
+Average critic loss: 275876843.22695315
+Average episode reward: -92764.92672424317
+Epoch: (293)
+Timestep: 602112
+Average actor loss: 3148.2724609375
+Average critic loss: 284587418.6082031
+Average episode reward: -92909.44429016113
+Epoch: (294)
+Timestep: 604160
+Average actor loss: 3149.148681640625
+Average critic loss: 277753973.67695314
+Average episode reward: -92859.94901428223
+Epoch: (295)
+Timestep: 606208
+Average actor loss: 3151.192138671875
+Average critic loss: 278595860.27851564
+Average episode reward: -92848.07392883301
+Epoch: (296)
+Timestep: 608256
+Average actor loss: 3153.470947265625
+Average critic loss: 283987732.07851565
+Average episode reward: -92843.50902404785
+Epoch: (297)
+Timestep: 610304
+Average actor loss: 3152.944580078125
+Average critic loss: 283484486.7566406
+Average episode reward: -92747.748538208
+Epoch: (298)
+Timestep: 612352
+Average actor loss: 3157.366943359375
+Average critic loss: 291994828.5171875
+Average episode reward: -92811.94673156738
+Epoch: (299)
+Timestep: 614400
+Average actor loss: 3157.089111328125
+Average critic loss: 287852378.4484375
+Average episode reward: -92723.71058654785
+Epoch: (300)
+Timestep: 616448
+Average actor loss: 3160.25439453125
+Average critic loss: 291328584.0578125
+Average episode reward: -92746.45592346191
+Epoch: (301)
+Timestep: 618496
+Average actor loss: 3220.507568359375
+Average critic loss: 275313579.5703125
+Average episode reward: -94611.74791870118
+Epoch: (302)
+Timestep: 620544
+Average actor loss: 3254.304443359375
+Average critic loss: 269385327.7125
+Average episode reward: -95623.58041381836
+Epoch: (303)
+Timestep: 622592
+Average actor loss: 3248.786376953125
+Average critic loss: 265546227.878125
+Average episode reward: -95365.40600585938
+Epoch: (304)
+Timestep: 624640
+Average actor loss: 3263.143310546875
+Average critic loss: 261168498.5359375
+Average episode reward: -95749.22689208985
+Epoch: (305)
+Timestep: 626688
+Average actor loss: 3271.587158203125
+Average critic loss: 259677768.0765625
+Average episode reward: -95942.01083984374
+Epoch: (306)
+Timestep: 628736
+Average actor loss: 3269.43994140625
+Average critic loss: 237475251.0484375
+Average episode reward: -95792.1898803711
+Epoch: (307)
+Timestep: 630784
+Average actor loss: 3276.99072265625
+Average critic loss: 240003903.1609375
+Average episode reward: -95956.18999023437
+Epoch: (308)
+Timestep: 632832
+Average actor loss: 3281.292236328125
+Average critic loss: 238688791.6359375
+Average episode reward: -96014.67155761718
+Epoch: (309)
+Timestep: 634880
+Average actor loss: 3281.369140625
+Average critic loss: 234012955.7015625
+Average episode reward: -95936.3422241211
+Epoch: (310)
+Timestep: 636928
+Average actor loss: 3281.350830078125
+Average critic loss: 221855067.21875
+Average episode reward: -95855.10262451172
+Epoch: (311)
+Timestep: 638976
+Average actor loss: 3285.138427734375
+Average critic loss: 216161355.01875
+Average episode reward: -95897.55377197266
+Epoch: (312)
+Timestep: 641024
+Average actor loss: 3242.341552734375
+Average critic loss: 221301799.790625
+Average episode reward: -94434.68732299804
+Epoch: (313)
+Timestep: 643072
+Average actor loss: 3205.411865234375
+Average critic loss: 214434581.503125
+Average episode reward: -93158.90966796875
+Epoch: (314)
+Timestep: 645120
+Average actor loss: 3195.839111328125
+Average critic loss: 221113895.99375
+Average episode reward: -92768.83054199218
+Epoch: (315)
+Timestep: 647168
+Average actor loss: 3202.95068359375
+Average critic loss: 258821055.8421875
+Average episode reward: -92918.4615234375
+Epoch: (316)
+Timestep: 649216
+Average actor loss: 3197.84423828125
+Average critic loss: 258897669.034375
+Average episode reward: -92673.04647216797
+Epoch: (317)
+Timestep: 651264
+Average actor loss: 3210.83447265625
+Average critic loss: 273482861.134375
+Average episode reward: -93013.08106689453
+Epoch: (318)
+Timestep: 653312
+Average actor loss: 3205.4541015625
+Average critic loss: 271477632.340625
+Average episode reward: -92759.78923339843
+Epoch: (319)
+Timestep: 655360
+Average actor loss: 3213.2763671875
+Average critic loss: 269718664.615625
+Average episode reward: -92933.13958740234
+Epoch: (320)
+Timestep: 657408
+Average actor loss: 3205.490966796875
+Average critic loss: 270397446.271875
+Average episode reward: -92602.40778808594
+Epoch: (321)
+Timestep: 659456
+Average actor loss: 3210.882568359375
+Average critic loss: 273585577.546875
+Average episode reward: -92698.05073242188
+Epoch: (322)
+Timestep: 661504
+Average actor loss: 3214.944091796875
+Average critic loss: 273148997.6
+Average episode reward: -92750.6947631836
+Epoch: (323)
+Timestep: 663552
+Average actor loss: 3216.445068359375
+Average critic loss: 265410056.9921875
+Average episode reward: -92720.53624267578
+Epoch: (324)
+Timestep: 665600
+Average actor loss: 3221.025634765625
+Average critic loss: 259511410.4390625
+Average episode reward: -92790.55400390625
+Epoch: (325)
+Timestep: 667648
+Average actor loss: 3221.176025390625
+Average critic loss: 259729291.3609375
+Average episode reward: -92718.15246582031
+Epoch: (326)
+Timestep: 669696
+Average actor loss: 3222.298828125
+Average critic loss: 254305885.9
+Average episode reward: -92676.96971435547
+Epoch: (327)
+Timestep: 671744
+Average actor loss: 3223.625732421875
+Average critic loss: 249365164.409375
+Average episode reward: -92643.106640625
+Epoch: (328)
+Timestep: 673792
+Average actor loss: 3224.343994140625
+Average critic loss: 236723806.58125
+Average episode reward: -92590.14764404297
+Epoch: (329)
+Timestep: 675840
+Average actor loss: 3224.675048828125
+Average critic loss: 234884856.4
+Average episode reward: -92524.75412597656
+Epoch: (330)
+Timestep: 677888
+Average actor loss: 3230.934326171875
+Average critic loss: 235427802.621875
+Average episode reward: -92650.75563964844
+Epoch: (331)
+Timestep: 679936
+Average actor loss: 3232.138671875
+Average critic loss: 240454806.5484375
+Average episode reward: -92614.29591064453
+Epoch: (332)
+Timestep: 681984
+Average actor loss: 3282.745361328125
+Average critic loss: 235752282.9390625
+Average episode reward: -94173.79453735352
+Epoch: (333)
+Timestep: 684032
+Average actor loss: 3323.031982421875
+Average critic loss: 237132131.4796875
+Average episode reward: -95402.05869140624
+Epoch: (334)
+Timestep: 686080
+Average actor loss: 3334.78759765625
+Average critic loss: 229857068.2984375
+Average episode reward: -95709.00373535157
+Epoch: (335)
+Timestep: 688128
+Average actor loss: 3336.783935546875
+Average critic loss: 192513458.5296875
+Average episode reward: -95699.45041503906
+Epoch: (336)
+Timestep: 690176
+Average actor loss: 3341.620361328125
+Average critic loss: 187055917.16875
+Average episode reward: -95781.99765625
+Epoch: (337)
+Timestep: 692224
+Average actor loss: 3341.579345703125
+Average critic loss: 171999768.40625
+Average episode reward: -95707.95412597657
+Epoch: (338)
+Timestep: 694272
+Average actor loss: 3345.838623046875
+Average critic loss: 172013441.028125
+Average episode reward: -95774.08793945312
+Epoch: (339)
+Timestep: 696320
+Average actor loss: 3344.845703125
+Average critic loss: 168565135.0203125
+Average episode reward: -95669.57915039062
+Epoch: (340)
+Timestep: 698368
+Average actor loss: 3353.756591796875
+Average critic loss: 164963454.71875
+Average episode reward: -95885.40302734375
+Epoch: (341)
+Timestep: 700416
+Average actor loss: 3355.319580078125
+Average critic loss: 161531687.2125
+Average episode reward: -95864.1411743164
+Epoch: (342)
+Timestep: 702464
+Average actor loss: 3355.841796875
+Average critic loss: 160703017.5953125
+Average episode reward: -95809.33103027343
+Epoch: (343)
+Timestep: 704512
+Average actor loss: 3334.48486328125
+Average critic loss: 161555507.978125
+Average episode reward: -95047.50448608398
+Epoch: (344)
+Timestep: 706560
+Average actor loss: 3272.55322265625
+Average critic loss: 162590783.2546875
+Average episode reward: -92963.3726989746
+Epoch: (345)
+Timestep: 708608
+Average actor loss: 3242.991455078125
+Average critic loss: 168019062.45625
+Average episode reward: -91931.2991760254
+Epoch: (346)
+Timestep: 710656
+Average actor loss: 3259.298583984375
+Average critic loss: 221403141.4078125
+Average episode reward: -92388.82142944336
+Epoch: (347)
+Timestep: 712704
+Average actor loss: 3252.577880859375
+Average critic loss: 221986649.7921875
+Average episode reward: -92103.14252319335
+Epoch: (348)
+Timestep: 714752
+Average actor loss: 3260.422607421875
+Average critic loss: 221938780.4828125
+Average episode reward: -92288.64505004883
+Epoch: (349)
+Timestep: 716800
+Average actor loss: 3258.8759765625
+Average critic loss: 220430287.24296874
+Average episode reward: -92172.62525024413
+Epoch: (350)
+Timestep: 718848
+Average actor loss: 3261.234130859375
+Average critic loss: 217795167.97421876
+Average episode reward: -92184.33947143555
+Epoch: (351)
+Timestep: 720896
+Average actor loss: 3258.751708984375
+Average critic loss: 211461922.50078124
+Average episode reward: -92038.78789672852
+Epoch: (352)
+Timestep: 722944
+Average actor loss: 3261.305419921875
+Average critic loss: 210289243.14453125
+Average episode reward: -92056.21860961914
+Epoch: (353)
+Timestep: 724992
+Average actor loss: 3264.693115234375
+Average critic loss: 209266321.81640625
+Average episode reward: -92102.11282348633
+Epoch: (354)
+Timestep: 727040
+Average actor loss: 3266.811767578125
+Average critic loss: 205575812.93046874
+Average episode reward: -92106.36504516602
+Epoch: (355)
+Timestep: 729088
+Average actor loss: 3267.199951171875
+Average critic loss: 209279167.10234374
+Average episode reward: -92056.11897583008
+Epoch: (356)
+Timestep: 731136
+Average actor loss: 3270.666748046875
+Average critic loss: 206458534.06484374
+Average episode reward: -92105.2476989746
+Epoch: (357)
+Timestep: 733184
+Average actor loss: 3270.774658203125
+Average critic loss: 205761897.66484374
+Average episode reward: -92046.7372253418
+Epoch: (358)
+Timestep: 735232
+Average actor loss: 3275.385498046875
+Average critic loss: 202682133.33515626
+Average episode reward: -92133.44310913087
+Epoch: (359)
+Timestep: 737280
+Average actor loss: 3278.9140625
+Average critic loss: 206398696.99140626
+Average episode reward: -92186.3696472168
+Epoch: (360)
+Timestep: 739328
+Average actor loss: 3281.041015625
+Average critic loss: 209972319.05859375
+Average episode reward: -92193.47130737305
+Epoch: (361)
+Timestep: 741376
+Average actor loss: 3288.331787109375
+Average critic loss: 209007502.44296876
+Average episode reward: -92368.28516235351
+Epoch: (362)
+Timestep: 743424
+Average actor loss: 3287.479248046875
+Average critic loss: 209614700.80078125
+Average episode reward: -92280.61969604492
+Epoch: (363)
+Timestep: 745472
+Average actor loss: 3318.95703125
+Average critic loss: 207384791.35546875
+Average episode reward: -93239.15638427735
+Epoch: (364)
+Timestep: 747520
+Average actor loss: 3383.044189453125
+Average critic loss: 207232179.1671875
+Average episode reward: -95261.81043701172
+Epoch: (365)
+Timestep: 749568
+Average actor loss: 3420.739501953125
+Average critic loss: 197784938.88125
+Average episode reward: -96426.87075195313
+Epoch: (366)
+Timestep: 751616
+Average actor loss: 3409.351318359375
+Average critic loss: 143690572.2359375
+Average episode reward: -96000.39599609375
+Epoch: (367)
+Timestep: 753664
+Average actor loss: 3424.072265625
+Average critic loss: 141262169.1078125
+Average episode reward: -96417.15349121093
+Epoch: (368)
+Timestep: 755712
+Average actor loss: 3419.726318359375
+Average critic loss: 140914533.5984375
+Average episode reward: -96217.46293945312
+Epoch: (369)
+Timestep: 757760
+Average actor loss: 3428.156005859375
+Average critic loss: 140760114.76796874
+Average episode reward: -96428.87199707031
+Epoch: (370)
+Timestep: 759808
+Average actor loss: 3428.135498046875
+Average critic loss: 140528574.0546875
+Average episode reward: -96368.90845947266
+Epoch: (371)
+Timestep: 761856
+Average actor loss: 3435.111328125
+Average critic loss: 143495772.7109375
+Average episode reward: -96534.72814941406
+Epoch: (372)
+Timestep: 763904
+Average actor loss: 3435.864013671875
+Average critic loss: 143244124.1578125
+Average episode reward: -96498.21312255859
+Epoch: (373)
+Timestep: 765952
+Average actor loss: 3436.783935546875
+Average critic loss: 141377097.6859375
+Average episode reward: -96469.59846191407
+Epoch: (374)
+Timestep: 768000
+Average actor loss: 3432.034423828125
+Average critic loss: 144020760.05625
+Average episode reward: -96552.78099365234
+Epoch: (375)
+Timestep: 770048
+Average actor loss: 3364.58642578125
+Average critic loss: 144014901.903125
+Average episode reward: -94288.69800415038
+Epoch: (376)
+Timestep: 772096
+Average actor loss: 3338.52197265625
+Average critic loss: 142232605.80546874
+Average episode reward: -93371.65686035156
+Epoch: (377)
+Timestep: 774144
+Average actor loss: 3355.767578125
+Average critic loss: 182149921.79296875
+Average episode reward: -93865.51267089843
+Epoch: (378)
+Timestep: 776192
+Average actor loss: 3351.15283203125
+Average critic loss: 183514018.49453124
+Average episode reward: -93653.08353271484
+Epoch: (379)
+Timestep: 778240
+Average actor loss: 3352.759033203125
+Average critic loss: 179070078.14296874
+Average episode reward: -93644.08981933593
+Epoch: (380)
+Timestep: 780288
+Average actor loss: 3350.870361328125
+Average critic loss: 174616266.28515625
+Average episode reward: -93523.06296386718
+Epoch: (381)
+Timestep: 782336
+Average actor loss: 3345.99072265625
+Average critic loss: 170491576.2296875
+Average episode reward: -93305.90075683594
+Epoch: (382)
+Timestep: 784384
+Average actor loss: 3350.98876953125
+Average critic loss: 168906491.82109374
+Average episode reward: -93408.0817626953
+Epoch: (383)
+Timestep: 786432
+Average actor loss: 3349.966064453125
+Average critic loss: 169295984.81171876
+Average episode reward: -93316.47687988282
+Epoch: (384)
+Timestep: 788480
+Average actor loss: 3347.92626953125
+Average critic loss: 167855309.5378906
+Average episode reward: -93191.08568115234
+Epoch: (385)
+Timestep: 790528
+Average actor loss: 3350.079345703125
+Average critic loss: 168231416.05039063
+Average episode reward: -93201.55319824218
+Epoch: (386)
+Timestep: 792576
+Average actor loss: 3353.84423828125
+Average critic loss: 172637058.21445313
+Average episode reward: -93266.1865234375
+Epoch: (387)
+Timestep: 794624
+Average actor loss: 3351.9375
+Average critic loss: 171445574.29726562
+Average episode reward: -93144.0787475586
+Epoch: (388)
+Timestep: 796672
+Average actor loss: 3355.453857421875
+Average critic loss: 168853017.87148437
+Average episode reward: -93200.04346923828
+Epoch: (389)
+Timestep: 798720
+Average actor loss: 3357.869140625
+Average critic loss: 167888602.22382814
+Average episode reward: -93221.61947021485
+Epoch: (390)
+Timestep: 800768
+Average actor loss: 3354.47314453125
+Average critic loss: 165472885.16132814
+Average episode reward: -93053.75104980469
+Epoch: (391)
+Timestep: 802816
+Average actor loss: 3360.00048828125
+Average critic loss: 164359214.66132814
+Average episode reward: -93175.45272216797
+Epoch: (392)
+Timestep: 804864
+Average actor loss: 3359.039794921875
+Average critic loss: 159857556.13242188
+Average episode reward: -93092.01987304687
+Epoch: (393)
+Timestep: 806912
+Average actor loss: 3362.04736328125
+Average critic loss: 158893885.67617187
+Average episode reward: -93132.08585205078
+Epoch: (394)
+Timestep: 808960
+Average actor loss: 3373.306640625
+Average critic loss: 155741478.10898438
+Average episode reward: -93142.63845214844
+Epoch: (395)
+Timestep: 811008
+Average actor loss: 3444.817626953125
+Average critic loss: 150170371.18242186
+Average episode reward: -95422.84996948243
+Epoch: (396)
+Timestep: 813056
+Average actor loss: 3473.709716796875
+Average critic loss: 148844039.5378906
+Average episode reward: -96318.99981689453
+Epoch: (397)
+Timestep: 815104
+Average actor loss: 3461.244140625
+Average critic loss: 102968426.74453124
+Average episode reward: -95865.08487548828
+Epoch: (398)
+Timestep: 817152
+Average actor loss: 3467.030029296875
+Average critic loss: 100227361.13046876
+Average episode reward: -96001.0962524414
+Epoch: (399)
+Timestep: 819200
+Average actor loss: 3469.60400390625
+Average critic loss: 97299215.82890625
+Average episode reward: -96032.68489990235
+Epoch: (400)
+Timestep: 821248
+Average actor loss: 3470.887451171875
+Average critic loss: 96016021.8828125
+Average episode reward: -96022.23253173828
+Epoch: (401)
+Timestep: 823296
+Average actor loss: 3474.603271484375
+Average critic loss: 95104077.84453125
+Average episode reward: -96090.14654541016
+Epoch: (402)
+Timestep: 825344
+Average actor loss: 3474.267333984375
+Average critic loss: 93869467.5515625
+Average episode reward: -96027.05068359376
+Epoch: (403)
+Timestep: 827392
+Average actor loss: 3480.13330078125
+Average critic loss: 95315266.740625
+Average episode reward: -96163.87403564453
+Epoch: (404)
+Timestep: 829440
+Average actor loss: 3480.458984375
+Average critic loss: 92043122.27617188
+Average episode reward: -96122.09909667968
+Epoch: (405)
+Timestep: 831488
+Average actor loss: 3486.312255859375
+Average critic loss: 92795452.62617187
+Average episode reward: -96260.04593505859
+Epoch: (406)
+Timestep: 833536
+Average actor loss: 3422.387451171875
+Average critic loss: 98797618.49648437
+Average episode reward: -94129.68390197754
+Epoch: (407)
+Timestep: 835584
+Average actor loss: 3380.57080078125
+Average critic loss: 97406544.58359376
+Average episode reward: -92715.23127746582
+Epoch: (408)
+Timestep: 837632
+Average actor loss: 3389.857177734375
+Average critic loss: 115744001.30625
+Average episode reward: -92968.30387268067
+Epoch: (409)
+Timestep: 839680
+Average actor loss: 3375.370849609375
+Average critic loss: 120621165.76484375
+Average episode reward: -92449.93437805175
+Epoch: (410)
+Timestep: 841728
+Average actor loss: 3376.133544921875
+Average critic loss: 121021778.215625
+Average episode reward: -92426.49930725098
+Epoch: (411)
+Timestep: 843776
+Average actor loss: 3379.225830078125
+Average critic loss: 126237282.2296875
+Average episode reward: -92480.38226623535
+Epoch: (412)
+Timestep: 845824
+Average actor loss: 3376.29931640625
+Average critic loss: 127077118.05859375
+Average episode reward: -92334.80266418456
+Epoch: (413)
+Timestep: 847872
+Average actor loss: 3377.315673828125
+Average critic loss: 127048728.80546875
+Average episode reward: -92320.29802551269
+Epoch: (414)
+Timestep: 849920
+Average actor loss: 3376.542236328125
+Average critic loss: 126565424.82109375
+Average episode reward: -92247.99358215331
+Epoch: (415)
+Timestep: 851968
+Average actor loss: 3373.58251953125
+Average critic loss: 127516862.12421875
+Average episode reward: -92103.04231262207
+Epoch: (416)
+Timestep: 854016
+Average actor loss: 3379.357421875
+Average critic loss: 125742593.38789062
+Average episode reward: -92238.10419006347
+Epoch: (417)
+Timestep: 856064
+Average actor loss: 3374.368896484375
+Average critic loss: 128390971.2859375
+Average episode reward: -92027.89045715332
+Epoch: (418)
+Timestep: 858112
+Average actor loss: 3383.065185546875
+Average critic loss: 127554408.1875
+Average episode reward: -92258.46466369629
+Epoch: (419)
+Timestep: 860160
+Average actor loss: 3379.94189453125
+Average critic loss: 130410883.1890625
+Average episode reward: -92104.82143859864
+Epoch: (420)
+Timestep: 862208
+Average actor loss: 3385.510986328125
+Average critic loss: 130247808.21132812
+Average episode reward: -92232.44723205567
+Epoch: (421)
+Timestep: 864256
+Average actor loss: 3385.718017578125
+Average critic loss: 131520590.25195312
+Average episode reward: -92185.73696594239
+Epoch: (422)
+Timestep: 866304
+Average actor loss: 3388.524169921875
+Average critic loss: 131858150.28398438
+Average episode reward: -92223.04632873535
+Epoch: (423)
+Timestep: 868352
+Average actor loss: 3385.30078125
+Average critic loss: 132910877.71835938
+Average episode reward: -92063.52391662597
+Epoch: (424)
+Timestep: 870400
+Average actor loss: 3390.61181640625
+Average critic loss: 135103886.3683594
+Average episode reward: -92182.99298400879
+Epoch: (425)
+Timestep: 872448
+Average actor loss: 3386.55908203125
+Average critic loss: 132662529.68710938
+Average episode reward: -91997.28863830566
+Epoch: (426)
+Timestep: 874496
+Average actor loss: 3450.381591796875
+Average critic loss: 121106512.46523437
+Average episode reward: -94015.09736328125
+Epoch: (427)
+Timestep: 876544
+Average actor loss: 3496.21484375
+Average critic loss: 120176857.10390624
+Average episode reward: -95452.22941894531
+Epoch: (428)
+Timestep: 878592
+Average actor loss: 3491.608642578125
+Average critic loss: 103197404.1453125
+Average episode reward: -95238.89936523438
+Epoch: (429)
+Timestep: 880640
+Average actor loss: 3500.635986328125
+Average critic loss: 98813698.5203125
+Average episode reward: -95471.34174804688
+Epoch: (430)
+Timestep: 882688
+Average actor loss: 3516.090576171875
+Average critic loss: 98477602.684375
+Average episode reward: -95908.31392822266
+Epoch: (431)
+Timestep: 884736
+Average actor loss: 3506.263671875
+Average critic loss: 89902578.16367188
+Average episode reward: -95527.33928222656
+Epoch: (432)
+Timestep: 886784
+Average actor loss: 3515.936279296875
+Average critic loss: 89570134.66523437
+Average episode reward: -95777.53647460937
+Epoch: (433)
+Timestep: 888832
+Average actor loss: 3522.30859375
+Average critic loss: 89487412.73242188
+Average episode reward: -95918.77814941407
+Epoch: (434)
+Timestep: 890880
+Average actor loss: 3517.891845703125
+Average critic loss: 87926259.71679688
+Average episode reward: -95709.74659423828
+Epoch: (435)
+Timestep: 892928
+Average actor loss: 3529.786865234375
+Average critic loss: 85763811.95273438
+Average episode reward: -96030.55805664063
+Epoch: (436)
+Timestep: 894976
+Average actor loss: 3527.42431640625
+Average critic loss: 86897354.49375
+Average episode reward: -95892.29375
+Epoch: (437)
+Timestep: 897024
+Average actor loss: 3485.633544921875
+Average critic loss: 87456390.5921875
+Average episode reward: -94543.83542480468
+Epoch: (438)
+Timestep: 899072
+Average actor loss: 3432.126708984375
+Average critic loss: 85684238.25546876
+Average episode reward: -92767.73076171875
+Epoch: (439)
+Timestep: 901120
+Average actor loss: 3421.094970703125
+Average critic loss: 88136200.61015625
+Average episode reward: -92343.46206054688
+Epoch: (440)
+Timestep: 903168
+Average actor loss: 3424.154296875
+Average critic loss: 112722286.71367188
+Average episode reward: -92380.32404785157
+Epoch: (441)
+Timestep: 905216
+Average actor loss: 3410.915283203125
+Average critic loss: 110897331.83320312
+Average episode reward: -91887.09379882812
+Epoch: (442)
+Timestep: 907264
+Average actor loss: 3423.837890625
+Average critic loss: 112944426.39414063
+Average episode reward: -92238.52419433594
+Epoch: (443)
+Timestep: 909312
+Average actor loss: 3417.370849609375
+Average critic loss: 108543018.81054688
+Average episode reward: -91962.42987060547
+Epoch: (444)
+Timestep: 911360
+Average actor loss: 3424.145263671875
+Average critic loss: 106611090.10898438
+Average episode reward: -92115.13295898438
+Epoch: (445)
+Timestep: 913408
+Average actor loss: 3422.557861328125
+Average critic loss: 107270678.53710938
+Average episode reward: -91994.21552734375
+Epoch: (446)
+Timestep: 915456
+Average actor loss: 3425.541748046875
+Average critic loss: 109530782.68007812
+Average episode reward: -92025.66773681641
+Epoch: (447)
+Timestep: 917504
+Average actor loss: 3426.85986328125
+Average critic loss: 109095672.29726562
+Average episode reward: -91999.27083740235
+Epoch: (448)
+Timestep: 919552
+Average actor loss: 3426.027099609375
+Average critic loss: 108228980.51523438
+Average episode reward: -91907.01561279297
+Epoch: (449)
+Timestep: 921600
+Average actor loss: 3435.718017578125
+Average critic loss: 104802252.97773437
+Average episode reward: -92151.81492919922
+Epoch: (450)
+Timestep: 923648
+Average actor loss: 3430.60595703125
+Average critic loss: 104755875.89023438
+Average episode reward: -91918.33975830078
+Epoch: (451)
+Timestep: 925696
+Average actor loss: 3436.497314453125
+Average critic loss: 106171521.734375
+Average episode reward: -92038.88869628907
+Epoch: (452)
+Timestep: 927744
+Average actor loss: 3437.09228515625
+Average critic loss: 107828983.9140625
+Average episode reward: -91990.10941162109
+Epoch: (453)
+Timestep: 929792
+Average actor loss: 3436.454345703125
+Average critic loss: 106614879.20429687
+Average episode reward: -91896.86234130859
+Epoch: (454)
+Timestep: 931840
+Average actor loss: 3441.35595703125
+Average critic loss: 108786941.47304687
+Average episode reward: -91986.03271484375
+Epoch: (455)
+Timestep: 933888
+Average actor loss: 3437.684814453125
+Average critic loss: 109609901.91601562
+Average episode reward: -91799.52866210937
+Epoch: (456)
+Timestep: 935936
+Average actor loss: 3442.455810546875
+Average critic loss: 108572227.77851562
+Average episode reward: -91881.59595947266
+Epoch: (457)
+Timestep: 937984
+Average actor loss: 3490.947265625
+Average critic loss: 104580554.46757813
+Average episode reward: -93310.20609130859
+Epoch: (458)
+Timestep: 940032
+Average actor loss: 3544.673828125
+Average critic loss: 106501034.54179688
+Average episode reward: -94959.02857666016
+Epoch: (459)
+Timestep: 942080
+Average actor loss: 3562.70751953125
+Average critic loss: 102110992.51289062
+Average episode reward: -95478.22457275391
+Epoch: (460)
+Timestep: 944128
+Average actor loss: 3563.443115234375
+Average critic loss: 78112160.30273438
+Average episode reward: -95430.04943847656
+Epoch: (461)
+Timestep: 946176
+Average actor loss: 3578.794189453125
+Average critic loss: 78662144.18632813
+Average episode reward: -95853.28153076171
+Epoch: (462)
+Timestep: 948224
+Average actor loss: 3571.471923828125
+Average critic loss: 77629524.32382813
+Average episode reward: -95551.54729003906
+Epoch: (463)
+Timestep: 950272
+Average actor loss: 3579.22314453125
+Average critic loss: 75969842.69804688
+Average episode reward: -95731.3869140625
+Epoch: (464)
+Timestep: 952320
+Average actor loss: 3578.65625
+Average critic loss: 75818051.19492188
+Average episode reward: -95646.4248046875
+Epoch: (465)
+Timestep: 954368
+Average actor loss: 3581.414794921875
+Average critic loss: 73668384.35820313
+Average episode reward: -95667.7055053711
+Epoch: (466)
+Timestep: 956416
+Average actor loss: 3586.9453125
+Average critic loss: 72414353.05273438
+Average episode reward: -95774.73244628907
+Epoch: (467)
+Timestep: 958464
+Average actor loss: 3588.56298828125
+Average critic loss: 72065291.23359375
+Average episode reward: -95760.81889648437
+Epoch: (468)
+Timestep: 960512
+Average actor loss: 3560.97705078125
+Average critic loss: 70270019.425
+Average episode reward: -94993.63634338378
+Epoch: (469)
+Timestep: 962560
+Average actor loss: 3509.731689453125
+Average critic loss: 68920294.72421876
+Average episode reward: -93308.59759216309
+Epoch: (470)
+Timestep: 964608
+Average actor loss: 3474.02197265625
+Average critic loss: 66312217.23125
+Average episode reward: -92092.56925354004
+Epoch: (471)
+Timestep: 966656
+Average actor loss: 3490.400146484375
+Average critic loss: 96924040.0671875
+Average episode reward: -92552.54562072754
+Epoch: (472)
+Timestep: 968704
+Average actor loss: 3483.849609375
+Average critic loss: 97623545.415625
+Average episode reward: -92277.04731750488
+Epoch: (473)
+Timestep: 970752
+Average actor loss: 3489.638671875
+Average critic loss: 101146698.98632812
+Average episode reward: -92400.2163116455
+Epoch: (474)
+Timestep: 972800
+Average actor loss: 3491.913818359375
+Average critic loss: 102432126.05664062
+Average episode reward: -92409.63326721192
+Epoch: (475)
+Timestep: 974848
+Average actor loss: 3495.715576171875
+Average critic loss: 103575154.96210937
+Average episode reward: -92467.19751281738
+Epoch: (476)
+Timestep: 976896
+Average actor loss: 3489.760498046875
+Average critic loss: 102606833.20117188
+Average episode reward: -92213.07143859864
+Epoch: (477)
+Timestep: 978944
+Average actor loss: 3498.421875
+Average critic loss: 104882397.86835937
+Average episode reward: -92421.0745147705
+Epoch: (478)
+Timestep: 980992
+Average actor loss: 3495.21533203125
+Average critic loss: 104539093.94726562
+Average episode reward: -92249.00959777832
+Epoch: (479)
+Timestep: 983040
+Average actor loss: 3499.218505859375
+Average critic loss: 104206769.64648438
+Average episode reward: -92305.30116271973
+Epoch: (480)
+Timestep: 985088
+Average actor loss: 3498.712890625
+Average critic loss: 104789955.66367188
+Average episode reward: -92221.30250549316
+Epoch: (481)
+Timestep: 987136
+Average actor loss: 3500.197265625
+Average critic loss: 105799343.77460937
+Average episode reward: -92207.83530578614
+Epoch: (482)
+Timestep: 989184
+Average actor loss: 3505.079833984375
+Average critic loss: 104108100.9890625
+Average episode reward: -92290.46244201661
+Epoch: (483)
+Timestep: 991232
+Average actor loss: 3506.639892578125
+Average critic loss: 104560038.93203124
+Average episode reward: -92284.9798980713
+Epoch: (484)
+Timestep: 993280
+Average actor loss: 3507.432861328125
+Average critic loss: 110009829.78828125
+Average episode reward: -92237.09873352051
+Epoch: (485)
+Timestep: 995328
+Average actor loss: 3506.842529296875
+Average critic loss: 111322679.5765625
+Average episode reward: -92154.92554016113
+Epoch: (486)
+Timestep: 997376
+Average actor loss: 3508.64697265625
+Average critic loss: 114502307.1125
+Average episode reward: -92150.46394348145
+Epoch: (487)
+Timestep: 999424
+Average actor loss: 3511.05908203125
+Average critic loss: 116306127.55429688
+Average episode reward: -92161.9266998291
+Epoch: (488)
+Timestep: 1001472
+Average actor loss: 3541.795654296875
+Average critic loss: 116868156.66523437
+Average episode reward: -92901.60693359375
+Epoch: (489)
+Timestep: 1003520
+Average actor loss: 3596.175537109375
+Average critic loss: 120902477.54414062
+Average episode reward: -94551.98727416992
+Epoch: (490)
+Timestep: 1005568
+Average actor loss: 3637.057373046875
+Average critic loss: 122458755.24804688
+Average episode reward: -95803.73920898438
+Epoch: (491)
+Timestep: 1007616
+Average actor loss: 3626.389892578125
+Average critic loss: 91357198.53398438
+Average episode reward: -95399.21114501954
+Epoch: (492)
+Timestep: 1009664
+Average actor loss: 3637.914794921875
+Average critic loss: 87382370.28046875
+Average episode reward: -95703.68559570312
+Epoch: (493)
+Timestep: 1011712
+Average actor loss: 3632.634033203125
+Average critic loss: 81673462.61953124
+Average episode reward: -95473.75974121093
+Epoch: (494)
+Timestep: 1013760
+Average actor loss: 3637.184326171875
+Average critic loss: 78880997.8703125
+Average episode reward: -95557.38741455079
+Epoch: (495)
+Timestep: 1015808
+Average actor loss: 3635.123046875
+Average critic loss: 76727990.5203125
+Average episode reward: -95437.08635253906
+Epoch: (496)
+Timestep: 1017856
+Average actor loss: 3647.633544921875
+Average critic loss: 76285024.20234375
+Average episode reward: -95775.72817382813
+Epoch: (497)
+Timestep: 1019904
+Average actor loss: 3643.471923828125
+Average critic loss: 74688668.62421875
+Average episode reward: -95582.22380371093
+Epoch: (498)
+Timestep: 1021952
+Average actor loss: 3650.162841796875
+Average critic loss: 72566147.3375
+Average episode reward: -95740.80551757812
+Epoch: (499)
+Timestep: 1024000
+Average actor loss: 3638.09765625
+Average critic loss: 71999113.20859376
+Average episode reward: -95813.95886230469
+Epoch: (500)
+Timestep: 1026048
+Average actor loss: 3566.49462890625
+Average critic loss: 75101255.23671874
+Average episode reward: -93558.14913330079
+Epoch: (501)
+Timestep: 1028096
+Average actor loss: 3528.864501953125
+Average critic loss: 72023227.60029297
+Average episode reward: -92298.07210083008
+Epoch: (502)
+Timestep: 1030144
+Average actor loss: 3547.253662109375
+Average critic loss: 117117363.6225586
+Average episode reward: -92830.92278442383
+Epoch: (503)
+Timestep: 1032192
+Average actor loss: 3536.479248046875
+Average critic loss: 132803444.80146484
+Average episode reward: -92417.1424987793
+Epoch: (504)
+Timestep: 1034240
+Average actor loss: 3539.659423828125
+Average critic loss: 127538448.73583984
+Average episode reward: -92457.41598510742
+Epoch: (505)
+Timestep: 1036288
+Average actor loss: 3546.336669921875
+Average critic loss: 127106270.54677734
+Average episode reward: -92607.3509338379
+Epoch: (506)
+Timestep: 1038336
+Average actor loss: 3544.25439453125
+Average critic loss: 122457867.90966797
+Average episode reward: -92471.50953979492
+Epoch: (507)
+Timestep: 1040384
+Average actor loss: 3545.521240234375
+Average critic loss: 122540254.98154297
+Average episode reward: -92452.75436401367
+Epoch: (508)
+Timestep: 1042432
+Average actor loss: 3548.73681640625
+Average critic loss: 121461615.56826171
+Average episode reward: -92481.26067504883
+Epoch: (509)
+Timestep: 1044480
+Average actor loss: 3547.30859375
+Average critic loss: 118603425.23310547
+Average episode reward: -92371.19774780274
+Epoch: (510)
+Timestep: 1046528
+Average actor loss: 3548.423095703125
+Average critic loss: 117779160.46748047
+Average episode reward: -92344.43180541992
+Epoch: (511)
+Timestep: 1048576
+Average actor loss: 3547.553955078125
+Average critic loss: 116650291.51123047
+Average episode reward: -92262.16514282227
+Epoch: (512)
+Timestep: 1050624
+Average actor loss: 3547.407470703125
+Average critic loss: 119096637.6006836
+Average episode reward: -92190.65601196288
+Epoch: (513)
+Timestep: 1052672
+Average actor loss: 3550.900390625
+Average critic loss: 119414605.6006836
+Average episode reward: -92231.15136108399
+Epoch: (514)
+Timestep: 1054720
+Average actor loss: 3551.58642578125
+Average critic loss: 120938661.56357422
+Average episode reward: -92188.89002075195
+Epoch: (515)
+Timestep: 1056768
+Average actor loss: 3555.862060546875
+Average critic loss: 119811149.66123047
+Average episode reward: -92251.91118774415
+Epoch: (516)
+Timestep: 1058816
+Average actor loss: 3553.02734375
+Average critic loss: 119167245.43935546
+Average episode reward: -92091.84287719727
+Epoch: (517)
+Timestep: 1060864
+Average actor loss: 3555.47119140625
+Average critic loss: 118599263.87451172
+Average episode reward: -92111.6216003418
+Epoch: (518)
+Timestep: 1062912
+Average actor loss: 3562.18408203125
+Average critic loss: 119553130.48232421
+Average episode reward: -92256.87051391602
+Epoch: (519)
+Timestep: 1064960
+Average actor loss: 3572.794921875
+Average critic loss: 118628718.53388672
+Average episode reward: -92010.99268188476
+Epoch: (520)
+Timestep: 1067008
+Average actor loss: 3648.47900390625
+Average critic loss: 113116534.99248047
+Average episode reward: -94275.17979125977
+Epoch: (521)
+Timestep: 1069056
+Average actor loss: 3692.680419921875
+Average critic loss: 114057919.96953125
+Average episode reward: -95617.61787109375
+Epoch: (522)
+Timestep: 1071104
+Average actor loss: 3675.503173828125
+Average critic loss: 70556646.13554688
+Average episode reward: -94999.03455810547
+Epoch: (523)
+Timestep: 1073152
+Average actor loss: 3693.279052734375
+Average critic loss: 56650036.48710938
+Average episode reward: -95505.4919921875
+Epoch: (524)
+Timestep: 1075200
+Average actor loss: 3692.79296875
+Average critic loss: 55512063.64179687
+Average episode reward: -95435.45197753907
+Epoch: (525)
+Timestep: 1077248
+Average actor loss: 3694.74609375
+Average critic loss: 53377253.51601563
+Average episode reward: -95432.44377441406
+Epoch: (526)
+Timestep: 1079296
+Average actor loss: 3699.878173828125
+Average critic loss: 54452194.925
+Average episode reward: -95561.22255859376
+Epoch: (527)
+Timestep: 1081344
+Average actor loss: 3702.6640625
+Average critic loss: 52336863.9953125
+Average episode reward: -95587.76606445313
+Epoch: (528)
+Timestep: 1083392
+Average actor loss: 3701.724365234375
+Average critic loss: 52368357.7140625
+Average episode reward: -95503.72570800781
+Epoch: (529)
+Timestep: 1085440
+Average actor loss: 3707.082763671875
+Average critic loss: 51307371.73125
+Average episode reward: -95624.84522705078
+Epoch: (530)
+Timestep: 1087488
+Average actor loss: 3703.63916015625
+Average critic loss: 51392130.7375
+Average episode reward: -95445.48798828125
+Epoch: (531)
+Timestep: 1089536
+Average actor loss: 3640.030517578125
+Average critic loss: 57601655.57421875

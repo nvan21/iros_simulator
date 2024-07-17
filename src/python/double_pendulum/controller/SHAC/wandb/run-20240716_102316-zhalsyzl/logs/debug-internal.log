@@ -1,0 +1,108 @@
+2024-07-16 10:23:16,263 INFO    StreamThr :239924 [internal.py:wandb_internal():85] W&B internal server running at pid: 239924, started at: 2024-07-16 10:23:16.261883
+2024-07-16 10:23:16,267 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status
+2024-07-16 10:23:16,268 INFO    WriterThread:239924 [datastore.py:open_for_write():87] open: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240716_102316-zhalsyzl/run-zhalsyzl.wandb
+2024-07-16 10:23:16,271 DEBUG   SenderThread:239924 [sender.py:send():379] send: header
+2024-07-16 10:23:16,275 DEBUG   SenderThread:239924 [sender.py:send():379] send: run
+2024-07-16 10:23:16,537 INFO    SenderThread:239924 [dir_watcher.py:__init__():211] watching files in: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240716_102316-zhalsyzl/files
+2024-07-16 10:23:16,537 INFO    SenderThread:239924 [sender.py:_start_run_threads():1188] run started: zhalsyzl with start time 1721143396.262076
+2024-07-16 10:23:16,547 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: check_version
+2024-07-16 10:23:16,548 DEBUG   SenderThread:239924 [sender.py:send_request():406] send_request: check_version
+2024-07-16 10:23:16,635 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: run_start
+2024-07-16 10:23:16,640 DEBUG   HandlerThread:239924 [system_info.py:__init__():26] System info init
+2024-07-16 10:23:16,640 DEBUG   HandlerThread:239924 [system_info.py:__init__():41] System info init done
+2024-07-16 10:23:16,640 INFO    HandlerThread:239924 [system_monitor.py:start():194] Starting system monitor
+2024-07-16 10:23:16,642 INFO    HandlerThread:239924 [system_monitor.py:probe():214] Collecting system info
+2024-07-16 10:23:16,642 INFO    SystemMonitor:239924 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-16 10:23:16,643 INFO    SystemMonitor:239924 [interfaces.py:start():188] Started cpu monitoring
+2024-07-16 10:23:16,645 INFO    SystemMonitor:239924 [interfaces.py:start():188] Started disk monitoring
+2024-07-16 10:23:16,647 INFO    SystemMonitor:239924 [interfaces.py:start():188] Started gpu monitoring
+2024-07-16 10:23:16,649 INFO    SystemMonitor:239924 [interfaces.py:start():188] Started memory monitoring
+2024-07-16 10:23:16,650 INFO    SystemMonitor:239924 [interfaces.py:start():188] Started network monitoring
+2024-07-16 10:23:16,680 DEBUG   HandlerThread:239924 [system_info.py:probe():152] Probing system
+2024-07-16 10:23:16,684 DEBUG   HandlerThread:239924 [system_info.py:_probe_git():137] Probing git
+2024-07-16 10:23:16,695 DEBUG   HandlerThread:239924 [system_info.py:_probe_git():145] Probing git done
+2024-07-16 10:23:16,695 DEBUG   HandlerThread:239924 [system_info.py:probe():200] Probing system done
+2024-07-16 10:23:16,695 DEBUG   HandlerThread:239924 [system_monitor.py:probe():223] {'os': 'Linux-5.14.0-284.64.1.el9_2.x86_64-x86_64-with-glibc2.34', 'python': '3.11.8', 'heartbeatAt': '2024-07-16T15:23:16.680979', 'startedAt': '2024-07-16T15:23:16.243488', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/train.py', 'codePathLocal': 'train.py', 'codePath': 'src/python/double_pendulum/controller/SHAC/train.py', 'git': {'remote': 'https://github.com/nvan21/iros_simulator.git', 'commit': '9bdc70160dde7ce214091656ae275df4a60a0983'}, 'email': 'nvan21@iastate.edu', 'root': '/work/flemingc/nvan21/projects/iros_simulator', 'host': 'nova22-gpu-5', 'username': 'nvan21', 'executable': '/work/flemingc/nvan21/miniconda3/envs/iros/bin/python', 'cpu_count': 48, 'cpu_count_logical': 48, 'cpu_freq': {'current': 2708.030583333333, 'min': 1500.0, 'max': 2650.0}, 'cpu_freq_per_core': [{'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 3625.112, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 3625.11, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 3623.156, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}, {'current': 2650.0, 'min': 1500.0, 'max': 2650.0}], 'disk': {'/': {'total': 219.4689598083496, 'used': 20.870559692382812}}, 'gpu': 'NVIDIA A100 80GB PCIe', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}], 'memory': {'total': 503.69799423217773}}
+2024-07-16 10:23:16,696 INFO    HandlerThread:239924 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-16 10:23:16,696 INFO    HandlerThread:239924 [system_monitor.py:probe():227] Publishing system info
+2024-07-16 10:23:16,696 DEBUG   HandlerThread:239924 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-16 10:23:17,541 INFO    Thread-17 :239924 [dir_watcher.py:_on_file_created():271] file/dir created: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240716_102316-zhalsyzl/files/conda-environment.yaml
+2024-07-16 10:23:21,141 DEBUG   HandlerThread:239924 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-16 10:23:21,145 INFO    HandlerThread:239924 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-16 10:23:21,225 DEBUG   SenderThread:239924 [sender.py:send():379] send: files
+2024-07-16 10:23:21,226 INFO    SenderThread:239924 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-16 10:23:21,438 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-16 10:23:21,438 DEBUG   SenderThread:239924 [sender.py:send_request():406] send_request: python_packages
+2024-07-16 10:23:21,440 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-16 10:23:21,441 DEBUG   SenderThread:239924 [sender.py:send_request():406] send_request: stop_status
+2024-07-16 10:23:21,441 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 10:23:21,446 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:21,540 INFO    Thread-17 :239924 [dir_watcher.py:_on_file_modified():288] file/dir modified: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240716_102316-zhalsyzl/files/conda-environment.yaml
+2024-07-16 10:23:21,541 INFO    Thread-17 :239924 [dir_watcher.py:_on_file_created():271] file/dir created: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240716_102316-zhalsyzl/files/requirements.txt
+2024-07-16 10:23:21,541 INFO    Thread-17 :239924 [dir_watcher.py:_on_file_created():271] file/dir created: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240716_102316-zhalsyzl/files/wandb-metadata.json
+2024-07-16 10:23:21,613 DEBUG   SenderThread:239924 [sender.py:send():379] send: telemetry
+2024-07-16 10:23:21,613 DEBUG   SenderThread:239924 [sender.py:send():379] send: telemetry
+2024-07-16 10:23:21,614 DEBUG   SenderThread:239924 [sender.py:send():379] send: metric
+2024-07-16 10:23:21,615 DEBUG   SenderThread:239924 [sender.py:send():379] send: metric
+2024-07-16 10:23:21,615 DEBUG   SenderThread:239924 [sender.py:send():379] send: metric
+2024-07-16 10:23:21,615 WARNING SenderThread:239924 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-07-16 10:23:21,616 DEBUG   SenderThread:239924 [sender.py:send():379] send: metric
+2024-07-16 10:23:21,616 WARNING SenderThread:239924 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-07-16 10:23:21,633 INFO    wandb-upload_0:239924 [upload_job.py:push():130] Uploaded file /mnt/job-temp/nvan21/5351229/tmpelvxblwwwandb/lre7dr34-wandb-metadata.json
+2024-07-16 10:23:22,443 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:23,443 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:24,443 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:25,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:26,442 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 10:23:26,462 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:27,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:28,462 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:29,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:30,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:31,442 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 10:23:31,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:32,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:33,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:34,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:35,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:36,440 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-16 10:23:36,441 DEBUG   SenderThread:239924 [sender.py:send_request():406] send_request: stop_status
+2024-07-16 10:23:36,481 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:36,611 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 10:23:37,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:38,463 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:39,464 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:40,464 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:41,464 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:42,443 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 10:23:42,464 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:43,464 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:44,464 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:45,464 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:46,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:47,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:48,448 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 10:23:48,464 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:48,560 INFO    Thread-17 :239924 [dir_watcher.py:_on_file_modified():288] file/dir modified: /work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/wandb/run-20240716_102316-zhalsyzl/files/config.yaml
+2024-07-16 10:23:49,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:50,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:51,441 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-16 10:23:51,441 DEBUG   SenderThread:239924 [sender.py:send_request():406] send_request: stop_status
+2024-07-16 10:23:51,482 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:52,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:53,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:53,598 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 10:23:54,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:55,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:56,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:57,465 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:58,466 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:23:59,443 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 10:23:59,466 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:24:00,466 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:24:01,466 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:24:02,466 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:24:03,466 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:24:04,444 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 10:24:04,467 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 10:24:05,467 DEBUG   HandlerThread:239924 [handler.py:handle_request():158] handle_request: internal_messages

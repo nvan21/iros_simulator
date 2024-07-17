@@ -1,0 +1,189 @@
+Epoch: (0)
+Timestep: 2048
+Average actor loss: 2656.910888671875
+Average critic loss: 4724225488.0
+Average episode reward: -85879.671875
+Epoch: (1)
+Timestep: 4096
+Average actor loss: 2828.841796875
+Average critic loss: 6030797484.0
+Average episode reward: -91437.10668945312
+Epoch: (2)
+Timestep: 6144
+Average actor loss: 2812.54248046875
+Average critic loss: 6741728845.333333
+Average episode reward: -90910.31591796875
+Epoch: (3)
+Timestep: 8192
+Average actor loss: 2724.82275390625
+Average critic loss: 6467321946.0
+Average episode reward: -88074.98413085938
+Epoch: (4)
+Timestep: 10240
+Average actor loss: 2672.208251953125
+Average critic loss: 6334630892.8
+Average episode reward: -86374.3439453125
+Epoch: (5)
+Timestep: 12288
+Average actor loss: 2641.70166015625
+Average critic loss: 6150125340.0
+Average episode reward: -85388.28688557942
+Epoch: (6)
+Timestep: 14336
+Average actor loss: 2613.44482421875
+Average critic loss: 5964646051.428572
+Average episode reward: -84474.93228585379
+Epoch: (7)
+Timestep: 16384
+Average actor loss: 2603.68603515625
+Average critic loss: 5904124124.0
+Average episode reward: -84159.49098205566
+Epoch: (8)
+Timestep: 18432
+Average actor loss: 2599.28466796875
+Average critic loss: 5913197850.666667
+Average episode reward: -84017.2034640842
+Epoch: (9)
+Timestep: 20480
+Average actor loss: 2590.45703125
+Average critic loss: 5874367509.6
+Average episode reward: -83731.84014892578
+Epoch: (10)
+Timestep: 22528
+Average actor loss: 2586.49853515625
+Average critic loss: 5851516637.090909
+Average episode reward: -83603.85037508878
+Epoch: (11)
+Timestep: 24576
+Average actor loss: 2580.3447265625
+Average critic loss: 5797527507.333333
+Average episode reward: -83404.91159057617
+Epoch: (12)
+Timestep: 26624
+Average actor loss: 2575.5546875
+Average critic loss: 5761666449.230769
+Average episode reward: -83250.04036771334
+Epoch: (13)
+Timestep: 28672
+Average actor loss: 2571.9833984375
+Average critic loss: 5735418325.714286
+Average episode reward: -83134.5608694894
+Epoch: (14)
+Timestep: 30720
+Average actor loss: 2570.15966796875
+Average critic loss: 5728336915.2
+Average episode reward: -83075.5699625651
+Epoch: (15)
+Timestep: 32768
+Average actor loss: 2572.278564453125
+Average critic loss: 5744777657.5
+Average episode reward: -83144.00199127197
+Epoch: (16)
+Timestep: 34816
+Average actor loss: 2569.454345703125
+Average critic loss: 5710011653.6470585
+Average episode reward: -83052.65463436351
+Epoch: (17)
+Timestep: 36864
+Average actor loss: 2569.526123046875
+Average critic loss: 5703532164.444445
+Average episode reward: -83054.89776611328
+Epoch: (18)
+Timestep: 38912
+Average actor loss: 2569.03466796875
+Average critic loss: 5684843572.631579
+Average episode reward: -83038.93958804481
+Epoch: (19)
+Timestep: 40960
+Average actor loss: 2568.9013671875
+Average critic loss: 5669461796.0
+Average episode reward: -83034.5456237793
+Epoch: (20)
+Timestep: 43008
+Average actor loss: 2568.824462890625
+Average critic loss: 5663504434.285714
+Average episode reward: -83031.9619780041
+Epoch: (21)
+Timestep: 45056
+Average actor loss: 2569.03173828125
+Average critic loss: 5647465625.090909
+Average episode reward: -83038.55768931996
+Epoch: (22)
+Timestep: 47104
+Average actor loss: 2568.2265625
+Average critic loss: 5625926474.782609
+Average episode reward: -83012.42528766135
+Epoch: (23)
+Timestep: 49152
+Average actor loss: 2568.17626953125
+Average critic loss: 5614539684.0
+Average episode reward: -83010.67472839355
+Epoch: (24)
+Timestep: 51200
+Average actor loss: 2567.531494140625
+Average critic loss: 5604809197.44
+Average episode reward: -82989.69544433594
+Epoch: (25)
+Timestep: 53248
+Average actor loss: 2567.08203125
+Average critic loss: 5595108330.769231
+Average episode reward: -82975.01266244742
+Epoch: (26)
+Timestep: 55296
+Average actor loss: 2566.93115234375
+Average critic loss: 5578111827.259259
+Average episode reward: -82969.97151240596
+Epoch: (27)
+Timestep: 57344
+Average actor loss: 2566.3056640625
+Average critic loss: 5574933678.571428
+Average episode reward: -82949.57970755441
+Epoch: (28)
+Timestep: 59392
+Average actor loss: 2566.124267578125
+Average critic loss: 5563639597.24138
+Average episode reward: -82943.53164146686
+Epoch: (29)
+Timestep: 61440
+Average actor loss: 2565.911376953125
+Average critic loss: 5561465112.0
+Average episode reward: -82936.45041910808
+Epoch: (30)
+Timestep: 63488
+Average actor loss: 2565.23779296875
+Average critic loss: 5550040402.83871
+Average episode reward: -82914.47504646548
+Epoch: (31)
+Timestep: 65536
+Average actor loss: 2562.732666015625
+Average critic loss: 5521666948.0
+Average episode reward: -82833.04791259766
+Epoch: (32)
+Timestep: 67584
+Average actor loss: 2574.411865234375
+Average critic loss: 5573769858.181818
+Average episode reward: -83210.25769412878
+Traceback (most recent call last):
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/train.py", line 77, in <module>
+    shac.train()
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/algo.py", line 177, in train
+    rets, states, episode_reward = self.rollout(states)
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/algo.py", line 279, in rollout
+    states, rewards, dones, truncateds, info = self.envs.step(self)
+                                               ^^^^^^^^^^^^^^^^^^^^
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/simulation.py", line 330, in step
+    self.x, self.dt * self.runge_integrator(self.x, nu, self.dt, self.t)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/simulation.py", line 169, in runge_integrator
+    k3 = self.plant.rhs(t + 0.5 * dt, x + 0.5 * dt * k2, u)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/plant.py", line 92, in rhs
+    new_x = torch.stack((v1, v2, a1, a2)).T
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Epoch: (33)
+Timestep: 69632
+Average actor loss: 2589.673095703125
+Average critic loss: 5639580762.117647
+Average episode reward: -83703.17608283547

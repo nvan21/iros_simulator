@@ -12,7 +12,11 @@ if TYPE_CHECKING:
 
 class Simulator:
     def __init__(
-        self, plant: "DoublePendulumPlant", num_envs: int, device: torch.device
+        self,
+        plant: "DoublePendulumPlant",
+        num_envs: int,
+        dt: float,
+        device: torch.device,
     ) -> None:
         self.plant = plant
         self.num_envs = num_envs
@@ -22,6 +26,18 @@ class Simulator:
             (num_envs, 4), dtype=torch.float32, device=device
         )  # position, velocity
         self.t = 0.0  # time
+        self.dt = dt
+
+        self.step_count = 0
+        self.max_time = 10.0
+        self.max_timesteps = int(self.max_time / self.dt)
+        self.max_velocity = 20.0
+
+        self.dones = torch.zeros(num_envs, device=device)
+        self.truncateds = torch.zeros(num_envs, device=device)
+
+        self.observation_space = np.ndarray((4,))
+        self.action_space = np.ndarray((1,))
 
         self.reset()
 
@@ -97,10 +113,10 @@ class Simulator:
             self.Q = torch.zeros(
                 (self.num_envs, 4, 4), dtype=torch.float32, device=self.device
             )
-            self.Q[:, 0, 0] = 100
-            self.Q[:, 1, 1] = 105
-            self.Q[:, 2, 2] = 1
-            self.Q[:, 3, 3] = 1
+            self.Q[:, 0, 0] = 100.0
+            self.Q[:, 1, 1] = 100.0
+            self.Q[:, 2, 2] = 1.0
+            self.Q[:, 3, 3] = 1.0
 
         if R is None:
             self.R = torch.zeros(
@@ -113,11 +129,30 @@ class Simulator:
         self.t = t
         self.x = x.clone()
 
-    def reset(self):
+    @torch.no_grad()
+    def reset_random_state(self) -> None:
+        self.t = 0.0
+        noise = torch.randn((self.num_envs, 4), device=self.device) * 0.01
+        noise[:, 2:] = noise[:, 2:] - 0.05
+        self.x = (
+            torch.tensor((0.0, 0.0, 0.0, 0.0), dtype=torch.float32, device=self.device)
+            + noise
+        )
+        # self.x = torch.zeros(
+        #     (self.num_envs, 4), dtype=torch.float32, device=self.device
+        # )
+        # self.x[:, 0] = torch.pi
+
+    def reset(self) -> torch.Tensor:
         self.set_measurement_parameters()
         self.set_motor_parameters()
         self.set_process_noise()
+        self.reset_random_state()
+        self.reset_data_recorder()
 
+        return self.x.clone()
+
+    def reset_data_recorder(self):
         self.t_values = []
         self.x_values = []
         self.u_values = []
@@ -141,6 +176,7 @@ class Simulator:
 
         return (k1 + 2.0 * (k2 + k3) + k4) / 6.0
 
+    # @torch.no_grad()
     def get_measurement(self, dt: float) -> torch.Tensor:
         x_meas = self.x.clone()
 
@@ -184,11 +220,11 @@ class Simulator:
             if time.time() - t0 > dt:
                 realtime = False
 
-            # Fix shape to be (num_envs, 2) instead of (1, 2)
-            if self.plant.torque_limit[0] == 0:
-                u = torch.cat([torch.zeros_like(u), u], dim=1)
-            elif self.plant.torque_limit[1] == 0 and u.shape[1] == 1:
-                u = torch.cat([u, torch.zeros_like(u)], dim=1)
+            # Fix shape to be (num_envs, 2) instead of (num_envs, 1)
+            # if self.plant.torque_limit[0] == 0:
+            #     u = torch.cat([torch.zeros_like(u), u], dim=1)
+            # elif self.plant.torque_limit[1] == 0 and u.shape[1] == 1:
+            #     u = torch.cat([u, torch.zeros_like(u)], dim=1)
         else:
             u = torch.zeros((self.num_envs, 2), device=self.device)
 
@@ -196,6 +232,7 @@ class Simulator:
 
         return u, realtime
 
+    # @torch.no_grad()
     def get_real_applied_u(self, u: torch.Tensor, t: float, dt: float) -> torch.Tensor:
         nu = u.clone()
 
@@ -207,20 +244,40 @@ class Simulator:
         nu = last_u + self.u_responsiveness * (nu - last_u)
 
         # torque noise
-        noise = torch.randn_like(nu) * self.u_noise_sigmas
-        nu = nu + noise
+        # noise = torch.randn_like(nu) * self.u_noise_sigmas
+        # nu = nu + noise
 
         # clip torques
-        nu[:, 0] = torch.clip(
-            nu[:, 0], -self.plant.torque_limit[0], self.plant.torque_limit[0]
-        )
-        nu[:, 1] = torch.clip(
-            nu[:, 1], -self.plant.torque_limit[1], self.plant.torque_limit[1]
-        )
+        with torch.no_grad():
+            nu0 = torch.clamp(
+                nu[:, 0].clone(),
+                -self.plant.torque_limit[0],
+                self.plant.torque_limit[0],
+            )
+            nu1 = torch.clamp(
+                nu[:, 1].clone(),
+                -self.plant.torque_limit[1],
+                self.plant.torque_limit[1],
+            )
 
         # TODO: add perturbance for joints
 
-        return nu
+        clamped_nu = torch.stack((nu0, nu1), dim=1)
+        # print(
+        #     torch.clamp(
+        #         nu,
+        #         torch.tensor(
+        #             [-self.plant.torque_limit[0], -self.plant.torque_limit[1]],
+        #             device=self.device,
+        #         ),
+        #         torch.tensor(
+        #             [self.plant.torque_limit[0], self.plant.torque_limit[1]],
+        #             device=self.device,
+        #         ),
+        #     )
+        # )
+        # print(nu0.unsqueeze(0).shape)
+        return clamped_nu
 
     def get_reward(self, x: torch.Tensor, u: torch.Tensor) -> torch.Tensor:
         """
@@ -234,6 +291,18 @@ class Simulator:
         3) If the first condition is true and either one of the pendulum velocities
         is above the threshold, then penalize for high velocity
         """
+        if len(x.size()) == 1:
+            x = x.unsqueeze(0)
+        if len(u.size()) == 1:
+            u = u.unsqueeze(0)
+
+        x[:, 0] = x[:, 0] * torch.pi + torch.pi  # [0, 2pi]
+        x[:, 1] = (x[:, 1] * torch.pi + torch.pi + torch.pi) % (
+            2 * torch.pi
+        ) - torch.pi  # [-pi, pi]
+        x[:, 2] = x[:, 2] * self.max_velocity
+        x[:, 3] = x[:, 3] * self.max_velocity
+
         x = self._normalize_angles(x)
         coordinates = self.plant.forward_kinematics(x)
         ee2_pos_y = coordinates[:, 3]
@@ -262,47 +331,91 @@ class Simulator:
         # Sum up all bonus rewards
         reward = reward + control_line_reward + roa_reward - velocity_reward
 
-        return reward
+        return reward  # , rad
 
-    def step(self, u: torch.Tensor, dt: float) -> None:
+    def step(
+        self, controller=None
+    ) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, dict]:
+        self.step_count += 1
+        info = {}
+
+        # Reset dones and truncateds
+        self.dones = torch.zeros_like(self.dones)
+        self.truncateds = torch.zeros_like(self.truncateds)
+
+        # Get measured state and query controller for action
+        # x_meas = self.get_measurement(self.dt)
+        xn = self._normalize_states(self.x.clone())
+        u, realtime = self.get_control_u(controller, xn, self.t, self.dt)
+        nu = self.get_real_applied_u(u, self.t, self.dt)
+
         # Add new simulator step
-        self.x = torch.add(self.x, dt * self.runge_integrator(self.x, u, dt, self.t))
+        self.x = torch.add(
+            self.x.clone(),
+            self.dt * self.runge_integrator(self.x.clone(), nu, self.dt, self.t),
+        )
 
         # Process noise
-        noise = torch.randn_like(self.x) * self.process_noise_sigmas
-        self.x = torch.add(self.x, noise)
+        # with torch.no_grad():
+        #     noise = torch.randn_like(self.x) * self.process_noise_sigmas
+        #     self.x = torch.add(self.x, noise)
 
-        self.t += dt
-        self.record_data(self.t, self.x.clone(), u.clone())
+        # Calculate reward
+        # Not having self.x.clone() causes nan errors
+        xn = self._normalize_states(self.x.clone())
+        reward = self.get_reward(xn, nu)
 
-    def controller_step(self, dt: float, controller=None) -> bool:
-        x_meas = self.get_measurement(dt)
-        u, realtime = self.get_control_u(controller, x_meas, self.t, dt)
-        nu = self.get_real_applied_u(u, self.t, dt)
+        # Increment time and record data
+        self.t += self.dt
+        self.record_data(self.t, self.x.clone(), nu.clone())
 
-        self.step(nu, dt)
+        # Get information for Gym API return
+        if self.step_count == self.max_timesteps:
+            info["final_observation"] = self.x.clone()
+            self.truncateds[:] = 1.0
+            self.reset_random_state()  # resets self.x to random starting states
+            self.reset_data_recorder()
+            self.step_count = 0
+            self.t = 0.0
 
-        return realtime
+        # new_states = self.x.clone()
+        new_states = self._normalize_states(self.x.clone())
 
-    def simulate_step(
-        self, t0: float, x0: torch.Tensor, t_steps: float, dt: float, controller=None
-    ) -> Tuple[list, list, list]:
-        self.set_state(t0, x0)
-        self.reset()
-        self.record_data(t0, x0.clone(), None)
+        return (new_states, reward, self.dones, self.truncateds, info)
 
-        tf = self.t
-        while self.t < tf:
-            _ = self.controller_step(dt, controller)
-            total_steps += self.num_envs
+    @torch.no_grad()
+    def clear_grad(self):
+        x = self.x.clone()
+        self.x = x.clone()
 
-        return self.x_values, self.t_values, self.u_values
+    @torch.no_grad()
+    def _normalize_angles(self, x: torch.Tensor) -> torch.Tensor:
+        """
+        Takes in the state observation and normalizes the angles to [-pi, pi]
+        """
+        y = x.clone()
+        y[:, :2] = y[:, :2] % (2 * torch.pi)
+        y[:, :2] = torch.where(y[:, :2] > torch.pi, y[:, :2] - 2 * torch.pi, y[:, :2])
 
-    def simulate_episode(
-        self, t0: float, x0: torch.Tensor, t_steps: int, dt: float, controller=None
-    ) -> None:
-        pass
+        return y
 
-    def _normalize_angles(self, x: torch.Tensor):
-        x[:, :2] = (x[:, :2]) % (2 * torch.pi)
+    # @torch.no_grad()
+    def _normalize_states(self, x: torch.Tensor) -> torch.Tensor:
+        """
+        Takes in the state observation and normalizes it to [-1, 1]
+        """
+        if len(x.size()) == 1:
+            x = x.unsqueeze(0)
+
+        x[:, 0] = (x[:, 0] % (2 * torch.pi) - torch.pi) / torch.pi
+        x[:, 1] = (x[:, 1] % (2 * torch.pi) - torch.pi) / torch.pi
+        x[:, 2] = (
+            torch.clip(x[:, 2], -self.max_velocity, self.max_velocity)
+            / self.max_velocity
+        )
+        x[:, 3] = (
+            torch.clip(x[:, 3], -self.max_velocity, self.max_velocity)
+            / self.max_velocity
+        )
+
         return x

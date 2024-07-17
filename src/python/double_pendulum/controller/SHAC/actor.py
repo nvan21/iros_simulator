@@ -23,7 +23,7 @@ class StochasticActor(nn.Module):
             modules.append(nn.LayerNorm(out_dim, dtype=torch.float32))
 
         self.mu_network = nn.Sequential(*modules[:-2]).to(device)
-        self.logstd_layer = nn.Parameter(torch.ones(act_dim, device=device) * -1).to(
+        self.logstd_layer = nn.Parameter(torch.ones(act_dim, device=device) * -1.0).to(
             device
         )
 
