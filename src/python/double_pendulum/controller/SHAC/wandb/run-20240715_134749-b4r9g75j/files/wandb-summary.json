@@ -1,1 +1,0 @@
-{"step": 2836480, "epoch": 1384, "actor_loss/step": 1380.719482421875, "actor_loss/epoch": 1380.719482421875, "critic_loss/step": 193640.50977829457, "critic_loss/epoch": 193640.50977829457, "rewards/step": -33534.14696472168, "_timestamp": 1721069858.7079167, "_runtime": 589.2251546382904, "_step": 1384, "_wandb": {"runtime": 589}}

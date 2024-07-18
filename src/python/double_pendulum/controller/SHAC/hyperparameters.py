@@ -26,7 +26,7 @@ class DoublePendulumConfig:
     gae_lambda = 0.95
     gamma = 0.99
     tau = 0.995
-    num_steps = 256  # this is the length of the trajectory (h in the paper)
+    num_steps = 512  # this is the length of the trajectory (h in the paper)
     num_envs = 64  # this is the number of parallel envs (N in the paper)
     max_epochs = 10000
     critic_iterations = 16

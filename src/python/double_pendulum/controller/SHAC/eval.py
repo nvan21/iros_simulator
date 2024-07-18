@@ -69,7 +69,7 @@ if __name__ == "__main__":
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
 
-    controller.load(filename="./weights/2024-07-17_17-36-28/best_policy.pt")
+    controller.load(filename="./weights/2024-07-18_12-03-13/best_policy.pt")
     T, X, U = envs.simulate_and_animate(
         t0=0.0,
         x0=x0,
