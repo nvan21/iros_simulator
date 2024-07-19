@@ -8,6 +8,8 @@ class Critic(nn.Module):
         obs_dim: int,
         units: list,
         device: torch.device,
+        beta_1: float,
+        beta_2: float,
         activation_fn,
     ):
         super(Critic, self).__init__()
@@ -24,7 +26,7 @@ class Critic(nn.Module):
         self.critic = nn.Sequential(*modules[:-2]).to(device)
 
         # The learning rate will be updated every backwards pass, so there's no need to set it here
-        self.optimizer = torch.optim.Adam(self.parameters())
+        self.optimizer = torch.optim.Adam(self.parameters(), betas=(beta_1, beta_2))
 
     def __call__(self, obs: torch.Tensor) -> torch.Tensor:
         return self.forward(obs)

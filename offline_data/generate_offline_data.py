@@ -104,7 +104,7 @@ dynamics_func = double_pendulum_dynamics_func(
     scaling=scaling_state,
 )
 
-max_velocity = 20
+max_velocity = 20.0
 
 # import lqr parameters
 rho = np.loadtxt(os.path.join(load_path, "rho"))
@@ -204,9 +204,10 @@ dones_buf = []
 
 for i in range(num_sims):
     rewards = []
+    x0 = np.random.normal(loc=0, scale=0.05, size=4)
     T, X, U = sim.simulate(
         t0=0.0,
-        x0=[0.0, 0.0, 0.0, 0.0],
+        x0=x0,
         tf=t_final,
         dt=dt,
         controller=controller,

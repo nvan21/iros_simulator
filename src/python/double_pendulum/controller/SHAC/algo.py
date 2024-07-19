@@ -93,6 +93,8 @@ class ControllerSHAC:
             act_dim=act_dim,
             units=self.params.actor_units,
             activation_fn=self.params.actor_activation,
+            beta_1=self.params.beta_1,
+            beta_2=self.params.beta_2,
             device=self.device,
         )
 
@@ -100,6 +102,8 @@ class ControllerSHAC:
             obs_dim=obs_dim,
             units=self.params.critic_units,
             activation_fn=self.params.critic_activation,
+            beta_1=self.params.beta_1,
+            beta_2=self.params.beta_2,
             device=self.device,
         )
 
@@ -107,6 +111,8 @@ class ControllerSHAC:
             obs_dim=obs_dim,
             units=self.params.critic_units,
             activation_fn=self.params.critic_activation,
+            beta_1=self.params.beta_1,
+            beta_2=self.params.beta_2,
             device=self.device,
         )
 

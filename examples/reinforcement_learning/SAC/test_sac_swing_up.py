@@ -35,7 +35,7 @@ if robot == "pendubot":
     design = "design_C.1"
     model = "model_1.0"
     model_path = "../../../data/policies/design_C.1/model_1.0/pendubot/SAC/best_model"
-    scaling_state = True
+    scaling_state = False
 
 elif robot == "acrobot":
     torque_limit = [0.0, 5.0]
