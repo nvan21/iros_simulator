@@ -11,6 +11,8 @@ from double_pendulum.model.plant import DoublePendulumPlant
 from double_pendulum.model.model_parameters import model_parameters
 from double_pendulum.utils.plotting import plot_timeseries
 
+USE_ACTOR_PRIOR = True
+
 
 def get_args() -> Namespace:
     parser = ArgumentParser()
@@ -69,7 +71,11 @@ if __name__ == "__main__":
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
 
-    controller.load(filename="./weights/2024-07-18_15-11-42/best_policy.pt")
+    if USE_ACTOR_PRIOR:
+        controller.prior_actor = True
+        controller.create_models(1, 4)
+    else:
+        controller.load(filename="./weights/2024-07-18_15-11-42/best_policy.pt")
     T, X, U = envs.simulate_and_animate(
         t0=0.0,
         x0=x0,
@@ -81,13 +87,13 @@ if __name__ == "__main__":
         video_name=os.path.join(save_dir, f"{args.n}.mp4"),
     )
 
-    times = np.linspace(0, 4999, 5000)
-    actions = np.stack(controller.actions)[:, 0]
+    # times = np.linspace(0, 4999, 5000)
+    # actions = np.stack(controller.actions)[:, 0]
 
-    plt.figure()
-    plt.plot(times, actions, label="torques")
-    plt.xlabel("time")
-    plt.ylabel("torque")
-    plt.title(f"Torque of {args.n} run")
-    plt.legend()
-    plt.savefig(f"{args.n}.png")
+    # plt.figure()
+    # plt.plot(times, actions, label="torques")
+    # plt.xlabel("time")
+    # plt.ylabel("torque")
+    # plt.title(f"Torque of {args.n} run")
+    # plt.legend()
+    # plt.savefig(f"{args.n}.png")

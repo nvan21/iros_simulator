@@ -1,12 +1,14 @@
 from double_pendulum.controller.abstract_controller import AbstractController
 
-from actor import StochasticActor
+from actor import StochasticActor, SACActor
 from critic import Critic
 from simulation import Simulator
 from hyperparameters import DoublePendulumConfig
 
 import torch
 import numpy as np
+from stable_baselines3.sac.policies import SACPolicy
+from stable_baselines3.common.utils import get_schedule_fn
 
 import wandb
 
@@ -19,7 +21,11 @@ import pickle
 
 class ControllerSHAC:
     def __init__(
-        self, params: DoublePendulumConfig, envs: Simulator, train: bool = True
+        self,
+        params: DoublePendulumConfig,
+        envs: Simulator,
+        train: bool = True,
+        prior_actor: bool = False,
     ):
         # super().__init__()
 
@@ -83,20 +89,43 @@ class ControllerSHAC:
         # Debugging list to track actions
         self.actions = []
 
+        # Whether or not to use a prior actor
+        self.prior_actor = prior_actor
+
     def create_models(
         self,
         act_dim: int,
         obs_dim: int,
     ) -> None:
-        self.actor = StochasticActor(
-            obs_dim=obs_dim,
-            act_dim=act_dim,
-            units=self.params.actor_units,
-            activation_fn=self.params.actor_activation,
-            beta_1=self.params.beta_1,
-            beta_2=self.params.beta_2,
-            device=self.device,
-        )
+        if self.prior_actor:
+            # schedule = get_schedule_fn(0.01)
+            # self.actor = SACPolicy(
+            #     observation_space=self.envs.observation_space,
+            #     action_space=self.envs.action_space,
+            #     lr_schedule=schedule,
+            #     net_arch=[256, 256],
+            # )
+            self.actor = SACActor(obs_dim=obs_dim, hidden_dim=256).to(self.device)
+            policy = torch.load(
+                "/work/flemingc/nvan21/projects/iros_simulator/data/policies/design_C.1/model_1.0/pendubot/SAC/policy.pth",
+                map_location=self.device,
+            )
+            actor_state_dict = {}
+            for key in policy.keys():
+                if "actor" in key:
+                    actor_key = key.replace("actor.", "")
+                    actor_state_dict[actor_key] = policy[key]
+            self.actor.load_state_dict(actor_state_dict)
+        else:
+            self.actor = StochasticActor(
+                obs_dim=obs_dim,
+                act_dim=act_dim,
+                units=self.params.actor_units,
+                activation_fn=self.params.actor_activation,
+                beta_1=self.params.beta_1,
+                beta_2=self.params.beta_2,
+                device=self.device,
+            )
 
         self.critic = Critic(
             obs_dim=obs_dim,

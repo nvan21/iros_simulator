@@ -1,6 +1,7 @@
 import torch
 import numpy as np
 import os
+from gymnasium import spaces
 
 from typing import TYPE_CHECKING, Tuple
 import time
@@ -36,8 +37,10 @@ class Simulator:
         self.dones = torch.zeros(num_envs, device=device)
         self.truncateds = torch.zeros(num_envs, device=device)
 
-        self.observation_space = np.ndarray((4,))
-        self.action_space = np.ndarray((1,))
+        self.observation_space = spaces.Box(
+            np.array([-1.0, -1.0, -1.0, -1.0]), np.array([1.0, 1.0, 1.0, 1.0])
+        )
+        self.action_space = spaces.Box(np.array([-1.0, -1.0]), np.array([1.0, 1.0]))
 
         self.reset()
 

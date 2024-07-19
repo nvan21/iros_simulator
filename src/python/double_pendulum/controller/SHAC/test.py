@@ -127,7 +127,13 @@ def reward_test():
     print(sim.get_reward(state, action))
 
 
-critic_test()
+def sac_shac_actor_test():
+    controller.prior_actor = True
+    controller.create_models(1, 4)
+    print(controller.actor(torch.tensor((0.0, 0.0, 10.0, 0.0), device=device)))
+
+
+sac_shac_actor_test()
 # directory = "/work/flemingc/nvan21/projects/iros_simulator/src/python/double_pendulum/controller/SHAC/weights"
 # subdirs = [
 #     d for d in os.listdir(directory) if os.path.isdir(os.path.join(directory, d))

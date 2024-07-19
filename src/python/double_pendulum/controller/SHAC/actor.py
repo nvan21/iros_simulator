@@ -55,3 +55,32 @@ class StochasticActor(nn.Module):
             self.optimizer.zero_grad()
             loss.backward()
             self.optimizer.step()
+
+
+# Standard deviation caps that stable baselines uses
+LOG_STD_MAX = 2
+LOG_STD_MIN = -20
+
+
+class SACActor(nn.Module):
+    def __init__(self, obs_dim: int, hidden_dim: int):
+        super().__init__()
+
+        self.latent_pi = nn.Sequential(
+            nn.Linear(obs_dim, hidden_dim),
+            nn.ReLU(),
+            nn.Linear(hidden_dim, hidden_dim),
+            nn.ReLU(),
+        )
+        self.mu = nn.Linear(hidden_dim, 1)
+        self.log_std = nn.Linear(hidden_dim, 1)
+
+    def forward(self, obs: torch.Tensor) -> torch.Tensor:
+        latent_pi = self.latent_pi(obs)
+        mean_actions = self.mu(latent_pi)
+        log_std = self.log_std(latent_pi)
+        log_std = torch.clamp(log_std, LOG_STD_MIN, LOG_STD_MAX)
+        std = torch.ones_like(mean_actions) * log_std.exp()
+        dist = Normal(mean_actions, std)
+
+        return dist.rsample()
